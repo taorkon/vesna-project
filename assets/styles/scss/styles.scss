@@ -1,1 +1,8 @@
 // Our SCSS styles
+@import "variables";
+
+
+.footer {
+    height: 100px;
+    background-color: $themeColor;
+}
