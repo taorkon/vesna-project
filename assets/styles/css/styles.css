@@ -47,9 +47,8 @@
   font-style: italic;
   font-display: swap;
 }
-.footer {
-  height: 100px;
-  background-color: #545A2F;
+.screen {
+  max-width: 1920px;
 }
 
 /*# sourceMappingURL=styles.css.map */
