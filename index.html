@@ -68,24 +68,33 @@
     <!--Переиспользуем title, button-->
     <section class="instruction screen">
       <div class="instruction__background"></div>
-      <div class="instruction__logoholder">
+      <!--<div class="instruction__logoholder">
         <img src="" alt="" class="0" />
         <img src="" alt="" class="0" />
-      </div>
+      </div>-->
       <div class="instruction__imageholder">
         <img src="assets/images/instruction__image.png" alt="" class="instruction__image" />
       </div>
-      <div class="instuction__contentholder">
+      <div class="instruction__contentholder">
         <div class="instruction__titleholder">
-          <h2 class="title">Как выбрать растения
+          <h2 class="title">Как выбрать растения<br>
             для сада?</h2>
         </div>
+        <div class="instruction__interactions">
         <div class="instruction__textholder">
           <p class="instruction__text">Пришлем инструкцию!</p>
         </div>
-        <form action="" class="instruction__form"></form>
-        <button class="button"></button>
+        <form action="" class="instruction__inputholder">
+          <input class="instruction__input" type="text" id="email" name="email" value="Ваш Email">
+        </form>
+        <form action="" class="instruction_checkboxholder">
+          <input type="checkbox" id="consent" name="consent" value="consent">
+          <label for="consent" class="instruction__label">Я даю согласие на обработку своих персональных
+            данных</label><br>
+        </form>
+        <button class="button">Хочу инструкцию</button>
       </div>
+    </div>
     </section>
     <!--Аня-->
     <!--Переиспользуем title, button button--shape button--color, arrow-r-->
