@@ -2,6 +2,7 @@
 @import "fonts";
 @import "variables";
 
+//общее
 .screen {
     max-width: 1920px;
     width: 100vw;
@@ -31,7 +32,7 @@
 
     color: $darkColor;
 }
-
+//стили для блока instruction
 .instruction {
     display: flex;
     justify-content: space-around;
