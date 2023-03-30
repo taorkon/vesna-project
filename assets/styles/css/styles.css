@@ -5,7 +5,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Geometria";
   src: url("../../fonts/Geometria-Regular.woff") format("woff");
@@ -13,7 +12,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Geometria";
   src: url("../../fonts/Geometria-Medium.woff") format("woff");
@@ -21,7 +19,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Noah";
   src: url("../../fonts/Noah-Regular.woff") format("woff");
@@ -29,7 +26,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Marck Script";
   src: url("../../fonts/MarckScript-Regular.woff") format("woff");
@@ -37,7 +33,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Geometria";
   src: url("../../fonts/Geometria-Light.woff") format("woff");
@@ -45,7 +40,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Noah";
   src: url("../../fonts/Noah-RegularItalic.woff") format("woff");
@@ -53,7 +47,6 @@
   font-style: italic;
   font-display: swap;
 }
-
 .screen {
   max-width: 1920px;
   width: 100vw;
@@ -86,7 +79,6 @@
   justify-content: space-around;
   align-items: center;
 }
-
 .instruction .instruction__background {
   height: 333px;
   width: 100vw;
@@ -94,18 +86,15 @@
   z-index: -1;
   background-color: #DDE3E1;
 }
-
 .instruction .instruction__imageholder {
   width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .instruction .instruction__image {
   width: 1309px;
 }
-
 .instruction .instruction__contentholder {
   width: 50vw;
   display: flex;
@@ -113,14 +102,12 @@
   align-items: flex-start;
   padding-bottom: 200px;
 }
-
 .instruction .instruction__interactions {
   display: flex;
   flex-direction: column;
   gap: 20px;
   height: 333px;
 }
-
 .instruction .instruction__text {
   font-family: "Noah";
   font-style: normal;
@@ -129,7 +116,6 @@
   line-height: 30px;
   color: #1A1A18;
 }
-
 .instruction .instruction__label {
   font-family: "Noah";
   font-style: normal;
@@ -138,7 +124,6 @@
   line-height: 20px;
   color: #1A1A18;
 }
-
 .instruction .instruction__input {
   width: 638px;
   height: 50px;
@@ -149,73 +134,4 @@
   font-size: 24px;
   line-height: 30px;
   color: #545A2F;
-}
-
-.designes__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1790px;
-  height: 1070px;
-  margin: 65px auto;
-  position: relative;
-}
-
-.designes__image {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: space-between;
-  gap: 5px;
-}
-
-.designes__picture {
-  width: 49%;
-  height: 50%;
-}
-
-.button {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  font-size: 16px;
-  background-image: url(../../images/arrow-r.png);
-  background-repeat: no-repeat;
-  background-position: 90%;
-  font-family: "Noah";
-  font-weight: 400;
-  font-size: 24px;
-  text-align: start;
-}
-
-.dream__container {
-  display: flex;
-  flex-flow: row wrap;
-  max-width: 1920px;
-  justify-content: space-around;
-  align-items: center;
-  margin: 65px auto;
-  background-image: url(../../images/round-logo.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  font-family: "Noah";
-  font-weight: 400;
-  font-size: 24px;
-  gap: 20px;
-}
-
-.dream__item {
-  display: flex;
-  max-width: 600px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.dream__logo {
-  width: 20%;
-  height: 50%;
 }
