@@ -151,7 +151,7 @@
   color: #545A2F;
 }
 
-.designes-container {
+.designes__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,7 +174,7 @@
   height: 50%;
 }
 
-.button--shape {
+.button {
   position: absolute;
   top: 50%;
   left: 40%;
@@ -189,4 +189,33 @@
   font-weight: 400;
   font-size: 24px;
   text-align: start;
+}
+
+.dream__container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1920px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 65px auto;
+  background-image: url(../../images/round-logo.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  font-family: "Noah";
+  font-weight: 400;
+  font-size: 24px;
+  gap: 20px;
+}
+
+.dream__item {
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dream__logo {
+  width: 20%;
+  height: 50%;
 }

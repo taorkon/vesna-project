@@ -67,13 +67,13 @@
       <!--Вика-->
       <!--Переиспользуем description, baranch-r, branch-l-->
       <section class="place screen">
-        <div class="place-container">
-          <div class="description">
-            <h3>
+        <div class="place__container">
+          <div class="place__description-holder">
+            <h3 class="description">
               Создаем не просто красивый сад с картинки,
               <strong>а место, куда захочется возвращаться.</strong>
             </h3>
-            <h5>
+            <h5 clas="place__text">
               От проекта до ухода за садом – один подрядчик. Мы несем
               ответственность за все этапы работ. Ваш сад будет органичен и
               выполнен в одном стиле. Мы делаем участок практичным, безопасным и
@@ -85,35 +85,35 @@
             </h5>
           </div>
         </div>
-        <div class="branch-l">
+        <div class="place__left">
           <img
-            class="branch-l--left"
+            class="branch-l"
             src="/assets/images/branch-l.svg"
-            alt="branch-l--left"
+            alt="branch-l"
           />
         </div>
-        <div class="branch-r">
+        <div class="place__right">
           <img
-            class="branch-r--right"
+            class="branch-r"
             src="/assets/images/branch-r.svg"
-            alt="branch-r--right"
+            alt="branch-r"
           />
         </div>
-        <div class="garden">
+        <div class="place__garden">
           <img
-            class="garden__img--1"
+            class="place__img-1"
             src="/assets/images/garden__img--1.jpg"
-            alt="garden__img--1.jpg"
+            alt="garden image 1"
           />
           <img
-            class="garden__img--2"
+            class="place__img-2"
             src="/assets/images/garden__img--2.jpg"
-            alt="garden__img--2.jpg"
+            alt="garden image 2"
           />
           <img
-            class="garden__img--3"
+            class="place__img-3"
             src="/assets/images/garden__img--3.jpg"
-            alt="garden__img--3.jpg"
+            alt="garden image 3"
           />
         </div>
       </section>
@@ -124,76 +124,74 @@
       <!--Переиспользуем title, pencil-logo, tree-logo,fence-logo, button-->
       <section class="services screen">
         <h2 class="title">Что мы делаем</h2>
-        <div class="services-container">
-          <div class="pencil-logo">
-            <h4 class="pencil-logo__title">Проектирование</h4>
+        <div class="services__container">
+          <div class="services__-pencil-holder">
+            <h4 class="services__subtitle">Проектирование</h4>
             <img
-              class="pencil-logo__image"
+              class="pencil-logo"
               src="/assets/images/pencil-logo.svg"
-              alt="pencil-logo--image"
+              alt="pencil logo"
             />
-            <ul>
-              <li class="pencil-logo__text">
+            <ul class="services__list">
+              <li class="services__text">
                 Новый качественный подход к проектированию
               </li>
-              <li class="pencil-logo__text">
+              <li class="services__text">
                 Детальная разработка всех инженерных разделов проекта
               </li>
-              <li class="pencil-logo__text">Расчет освещенности участка</li>
-              <li class="pencil-logo__text">Реализация идей любой сложности</li>
-              <li class="pencil-logo__text">Европейский подход</li>
-              <li class="pencil-logo__text">
+              <li class="services__text">Расчет освещенности участка</li>
+              <li class="services__text">Реализация идей любой сложности</li>
+              <li class="services__text">Европейский подход</li>
+              <li class="services__text">
                 Применение нестандартных современных идей и технологий
               </li>
-              <li class="pencil-logo__text">
+              <li class="services__text">
                 Точный расчет бюджетов строительства
               </li>
             </ul>
           </div>
-          <div class="tree-logo">
-            <h4 class="tree-logo__title">Озеленение</h4>
+          <div class="services__tree-holder">
+            <h4 class="services__subtitle">Озеленение</h4>
             <img
-              class="tree-logo__image"
+              class="tree-logo"
               src="/assets/images/tree-logo.svg"
-              alt="tree-logo--image"
+              alt="tree logo"
             />
-            <ul>
-              <li class="tree-logo__text">
+            <ul class="services__list">
+              <li class="services__text">
                 Прямые поставки посадочного материала из лучших европейских
                 питомников
               </li>
-              <li class="tree-logo__text">
+              <li class="services__text">
                 Использование новейших технологий при посадке
               </li>
-              <li class="tree-logo__text">
+              <li class="services__text">
                 Новый качественный подход к созданию пространств
               </li>
-              <li class="tree-logo__text">Европейские решения</li>
-              <li class="tree-logo__text">
+              <li class="services__text">Европейские решения</li>
+              <li class="services__text">
                 Длительная гарантия на все работы и посадочный материал
               </li>
-              <li class="tree-logo__text">Сервисное обслуживание</li>
+              <li class="services__text">Сервисное обслуживание</li>
             </ul>
           </div>
-          <div class="fence-logo">
-            <h4 class="fence-logo__title">Благоустройство</h4>
+          <div class="services__fence-holder">
+            <h4 class="services__subtitle">Благоустройство</h4>
             <img
-              class="fence-logo__image"
+              class="fence-logo"
               src="/assets/images/fence-logo.svg"
-              alt="fence-logo--image"
+              alt="fence logo"
             />
-            <ul>
-              <li class="fence-logo__text">
+            <ul clas="services__list">
+              <li class="services__text">
                 Все виды строительно-монтажных работ по благоустройству
               </li>
-              <li class="fence-logo__text">Инновационные решения</li>
-              <li class="fence-logo__text">
-                Длительная гарантия на все работы
-              </li>
-              <li class="fence-logo__text">
+              <li class="services__text">Инновационные решения</li>
+              <li class="services__text">Длительная гарантия на все работы</li>
+              <li class="services__text">
                 Строительство водоемов любой сложности
               </li>
-              <li class="fence-logo__text">
+              <li class="services__text">
                 Разработка индивидуальных малых архитектурных объектов
               </li>
             </ul>
