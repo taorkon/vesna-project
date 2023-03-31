@@ -135,3 +135,71 @@
   line-height: 30px;
   color: #545A2F;
 }
+
+.place__container {
+  display: flex;
+  justify-content: center;
+}
+
+.place__description-holder {
+  width: 1336px;
+  height: 417px;
+}
+
+.description {
+  margin-bottom: 53px;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.place__text {
+  width: 856px;
+  height: 240px;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 259px;
+  margin-right: 221px;
+  margin-top: 53px;
+  margin-bottom: 200px;
+}
+
+.place__left {
+  position: absolute;
+  left: 0px;
+  margin-bottom: 68px;
+}
+
+.place__right {
+  position: absolute;
+  right: 0px;
+  margin-bottom: 68px;
+}
+
+.branch-l {
+  height: 384px;
+  width: 511px;
+  border-radius: 0px;
+}
+
+.place__garden {
+  width: 1920px;
+  height: 410px;
+  margin-top: 465px;
+  display: flex;
+  gap: 27px;
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+.place__img-1, .place__img-2, .place__img-3 {
+  width: 579px;
+  height: 410px;
+}
