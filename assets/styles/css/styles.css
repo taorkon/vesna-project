@@ -72,6 +72,7 @@
   font-size: 58px;
   line-height: 72px;
   color: #1A1A18;
+  text-align: center;
 }
 
 .instruction {
@@ -202,4 +203,55 @@
 .place__img-1, .place__img-2, .place__img-3 {
   width: 579px;
   height: 410px;
+}
+
+.services__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+}
+
+.services__subtitle {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 47px;
+  text-align: center;
+  color: #1A1A18;
+  margin-top: 80px;
+}
+
+.services__list {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.services__text {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1A1A18;
+  margin-bottom: 20px;
+}
+
+.services__pencil-holder, .services__tree-holder, .services__fence-holder {
+  width: 399px;
+  height: 678px;
+  margin-bottom: 122px;
+  position: relative;
+  margin-right: 70px;
+}
+
+.pencil-logo, .tree-logo, .fence-logo {
+  width: 81px;
+  height: 81px;
+  position: absolute;
+  top: 0px;
 }

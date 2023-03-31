@@ -31,6 +31,7 @@
     line-height: 72px;
 
     color: $darkColor;
+    text-align: center;
 }
 //стили для блока instruction
 .instruction {
@@ -180,3 +181,55 @@ margin-right: 65px;
     height: 410px;
 }
 
+//стили для блока services 
+
+.services__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+}
+
+.services__subtitle {
+font-family: 'Noah';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 47px;
+text-align: center;
+color: $darkColor;
+margin-top: 80px;
+}
+
+.services__list {
+font-family: 'Noah';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+}
+
+.services__text {
+font-family: 'Noah';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+color: $darkColor;
+margin-bottom: 20px;
+}
+
+.services__pencil-holder, .services__tree-holder, .services__fence-holder {
+    width: 399px;
+    height: 678px;
+    margin-bottom: 122px;
+    position: relative;
+    margin-right: 70px;
+}
+
+.pencil-logo, .tree-logo, .fence-logo {
+width: 81px;
+height: 81px;
+position: absolute;
+top: 0px;
+}
