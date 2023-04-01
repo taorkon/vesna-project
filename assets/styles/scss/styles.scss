@@ -74,20 +74,37 @@
     align-items: center;
   }
 
+  .instruction__background {
+    height: 333px;
+    width: 100%;
+    max-width: 100vw;
+    position: absolute;
+    z-index: -1;
+
+    background-color: $accentColor;
+  }
+
+  .instruction__imageholder {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .instruction__image {
     width: 1309px;
   }
+}
 
-  .instruction__contentholder {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.get-instruction {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-    padding-bottom: 200px;
-  }
+  padding-bottom: 200px;
 
-  .instruction__interactions {
+  .get-instruction__interactions {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -95,7 +112,7 @@
     height: 333px;
   }
 
-  .instruction__text {
+  .get-instruction__text {
     font-family: "Noah";
     font-style: normal;
     font-weight: 400;
@@ -105,7 +122,7 @@
     color: $darkColor;
   }
 
-  .instruction__label {
+  .get-instruction__label {
     font-family: "Noah";
     font-style: normal;
     font-weight: 400;
@@ -115,7 +132,7 @@
     color: $darkColor;
   }
 
-  .instruction__input {
+  .get-instruction__input {
     width: 638px;
     height: 50px;
     border: none;
@@ -128,6 +145,90 @@
 
     color: $themeColor;
   }
+}
+
+//стили для блока questions
+
+.questions__list {
+  width: 825px;
+}
+
+.questions__question {
+  list-style-type: none;
+  width: 100%;
+}
+
+.questions__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  //width: 662px;
+  //height: 35px;
+
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.questions__input {
+  display: none;
+}
+
+.questions__text-holder {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.questions__input:checked + .questions__text-holder {
+  max-height: 120px;
+}
+
+//transition for question-icons (active & inactive)
+
+.nc-int-icon-rotate {
+  --animation-duration: 0.4s;
+}
+
+.nc-int-icon {
+  position: relative;
+}
+
+.nc-int-icon-b {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  left: calc(50% - 0.5em);
+  opacity: 0;
+}
+
+.nc-int-icon-rotate .nc-int-icon-a,
+.nc-int-icon-rotate .nc-int-icon-b {
+  transition: opacity 0s calc(var(--animation-duration) / 2),
+    transform var(--animation-duration);
+  transform-origin: center center;
+}
+
+.nc-int-icon-rotate .nc-int-icon-b {
+  transform: rotate(90deg) scale(0.6);
+}
+
+.nc-int-icon-state-b .nc-int-icon-a {
+  opacity: 0;
+}
+
+.nc-int-icon-state-b .nc-int-icon-b {
+  opacity: 1;
+}
+
+.nc-int-icon-rotate.nc-int-icon-state-b .nc-int-icon-a {
+  transform: rotate(-90deg) scale(0.6);
+}
+
+.nc-int-icon-rotate.nc-int-icon-state-b .nc-int-icon-b {
+  transform: rotate(0);
 }
 
 //стили для блока place
@@ -356,8 +457,12 @@
 
 //стили для блока location screen
 .location__screen {
-  width: 1920px;
   height: 1300px;
+}
+
+.location__content {
+  display: flex;
+  justify-content: center;
 }
 
 .description {
@@ -395,24 +500,24 @@
 }
 
 .location__block {
-  margin-top: -532px;
+  margin-top: -732px;
 }
 
 .location__block-1 {
   display: flex;
-  margin-left: 893px;
+  margin-left: 593px;
 }
 
 .location__block-2 {
   display: flex;
-  margin-left: 943px;
+  margin-left: 643px;
   margin-top: 156px;
   margin-bottom: 161px;
 }
 
 .location__block-3 {
   display: flex;
-  margin-left: 979px;
+  margin-left: 679px;
 }
 
 .tick-circle {
