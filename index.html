@@ -57,9 +57,6 @@
         <img class="branch-l" src="/assets/images/branch-l.svg" alt="branch-l" />
       </div>
       </div>
-      <div class="place__left">
-        <img class="branch-l" src="/assets/images/branch-l.svg" alt="branch-l" />
-      </div>
       <div class="place__right">
         <img class="branch-r" src="/assets/images/branch-r.svg" alt="branch-r" />
       </div>
@@ -117,7 +114,7 @@
     <section class="services screen">
       <h2 class="title">Что мы делаем</h2>
       <div class="services__container">
-        <div class="services__-pencil-holder">
+        <div class="services__pencil-holder">
           <h4 class="services__subtitle">Проектирование</h4>
           <img class="pencil-logo" src="/assets/images/pencil-logo.svg" alt="pencil logo" />
           <ul class="services__list">
@@ -178,8 +175,6 @@
         </div>
         <button class="button">Выбрать услугу</button>
       </div>
-      <button class="button">Выбрать услугу</button>
-      </div>
     </section>
     <!--Таня-->
     <!--Переиспользуем title, button-->
@@ -213,6 +208,7 @@
           </form>
           <button class="button">Хочу инструкцию</button>
         </div>
+      </div>
     </section>
     <!--Аня-->
     <!--Переиспользуем title, button button--shape button--color, arrow-r-->
@@ -492,28 +488,60 @@
           </ul>
         </div>
       </div>
+      <div class="get-instruction get-instruction--small">
+        <div class="get-instruction__titleholder">
+          <h2 class="title">
+            Как выбрать растения<br />
+            для сада?
+          </h2>
+        </div>
+        <div class="get-instruction__imageholder">
+          <img src="assets/images/instruction__image.png" alt="" class="get-instruction__image" />
+        </div>
+        <div class="get-instruction__interactions">
+          <div class="get-instruction__textholder">
+            <p class="get-instruction__text">Пришлем инструкцию!</p>
+          </div>
+          <form action="" class="get-instruction__inputholder">
+            <input class="get-instruction__input" type="text" id="email" name="email" value="Ваш Email">
+          </form>
+          <form action="" class="get-instruction_checkboxholder">
+            <input type="checkbox" id="consent" name="consent" value="consent">
+            <label for="consent" class="get-instruction__label">Я даю согласие на обработку своих персональных
+              данных</label>
+          </form>
+          <button class="button">Хочу инструкцию</button>
+        </div>
+      </div>
       <div class="get-instruction"></div>
     </section>
     <!--Алиса-->
     <!--Переиспользуем button, button button--round-->
     <section class="details screen">
-      <h2 class="title">Остались вопросы?</h2>
-      <p class="details__text">
-        Пригласите ландшафтного дизайнера на участок!
-      </p>
-      <object class="arroow-r arrow--decoration" data="vector_arrow.svg" type="image/svg+xml"></object>
+      <div class="details_screen__title">
+        <h1 class="title">Остались вопросы?</h1>
+        <h4 class="details__text">
+          Пригласите ландшафтного дизайнера на участок!
+        </h4>
+      </div>
+      <img class="arrow-vector" src="./assets/images/arrow-vector.svg" alt="arrow-vector" />
       <button class="button">Перезвоните мне</button>
-      <button class="button button--round">Наверх</button>
+      <button class="button button--round button--color">Наверх</button>
     </section>
   </main>
   <!--Алиса-->
   <!--Переиспользуем whole-logo inst-logo-->
   <footer class="footer screen">
-    <p class="footer__text">+7(921) 888 88 88</p>
-    <p class="footer__text">info@vesna.ru</p>
-    <p class="footer__text">© 2021 VESNA</p>
-    <p class="footer__text">Политика конфиденциальности</p>
-    <img class="whole-logo" src="vesna-logo-round.svg" alt="vesna logo" />
+    <div>
+      <p class="footer__text">+7(921) 888 88 88</p>
+      <p class="footer__text">info@vesna.ru</p>
+      <p class="footer__text--transparent">© 2021 VESNA</p>
+    </div>
+    <img class="whole-logo" src="./assets/images/whole-logo.svg" alt="round logo" />
+    <div class="footer--right">
+      <img src="./assets/images/insta-logo.svg" alt="insta logo" />
+      <p>Политика конфиденциальности</p>
+    </div>
   </footer>
   <script src="src/script.js"></script>
 </body>

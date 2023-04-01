@@ -13,8 +13,9 @@
 
 .body,
 .screen {
-    // max-width: 1920px;
-    max-width: 100vw;
+    max-width: 1920px;
+    //max-width: 100vw;
+
 }
 
 .button {
@@ -41,12 +42,15 @@
     color: $themeColor;
 }
 
+
+
 .title {
     font-family: "Noah";
     font-style: normal;
     font-weight: 400;
     font-size: 58px;
     line-height: 72px;
+    text-align: center;
 
     color: $darkColor;
 }
@@ -149,43 +153,49 @@
 
 //стили для блока questions
 
-.questions__list {
-    width: 825px;
-}
-
-.questions__question {
-    list-style-type: none;
-    width: 100%;
-}
-
-.questions__label {
+.question {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    //width: 662px;
-    //height: 35px;
+    .questions__list {
+        width: 825px;
 
-    font-family: 'Noah';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 35px;
+    }
+
+    .questions__question {
+        list-style-type: none;
+        width: 100%;
+    }
+
+    .questions__label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        //width: 662px;
+        //height: 35px;
+
+        font-family: 'Noah';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .questions__input {
+        display: none;
+    }
+
+    .questions__text-holder {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    .questions__input:checked+.questions__text-holder {
+        max-height: 120px;
+    }
 }
 
-.questions__input {
-    display: none;
-}
-
-.questions__text-holder {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s;
-}
-
-.questions__input:checked+.questions__text-holder {
-    max-height: 120px;
-}
 
 //transition for question-icons (active & inactive)
 
@@ -230,8 +240,17 @@
     transform: rotate(0);
 }
 
+.get-instruction--small {
+    width: 30%;
 
-//стили для блока place
+    background-color: $accentColor;
+
+    .get-instruction__imageholder {
+        width: 473px;
+    }
+}
+
+//стили для блока place 
 
 .place__container {
     display: flex;
@@ -245,7 +264,7 @@
 
 .description {
     margin-bottom: 53px;
-    font-family: "Noah";
+    font-family: 'Noah';
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
@@ -256,11 +275,13 @@
 .place__text {
     width: 856px;
     height: 240px;
-    font-family: "Noah";
+
+    font-family: 'Noah';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
+    
     text-align: center;
     margin-left: 259px;
     margin-right: 221px;
@@ -287,14 +308,13 @@
 }
 
 .place__garden {
-    max-width: 1920;
-    //width: 1920px; это максимальная ширина
+    width: 1920px;
     height: 410px;
     margin-top: 465px;
     display: flex;
     gap: 27px;
-    //margin-left: 65px; из за них ширина контейнера больше экрана
-    //margin-right: 65px;
+    margin-left: 65px;
+    margin-right: 65px;
 }
 
 .place__img-1,
@@ -303,6 +323,64 @@
     width: 579px;
     height: 410px;
 }
+
+//стили для блока services 
+
+.services__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+}
+
+.services__subtitle {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 47px;
+    text-align: center;
+    color: $darkColor;
+    margin-top: 80px;
+}
+
+.services__list {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.services__text {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: $darkColor;
+    margin-bottom: 20px;
+}
+
+.services__pencil-holder,
+.services__tree-holder,
+.services__fence-holder {
+    width: 399px;
+    height: 678px;
+    margin-bottom: 122px;
+    position: relative;
+    margin-right: 70px;
+}
+
+.pencil-logo,
+.tree-logo,
+.fence-logo {
+    width: 81px;
+    height: 81px;
+    position: absolute;
+    top: 0px;
+}
+
 
 //стили для блока services
 
@@ -386,6 +464,8 @@
     height: 50%;
 }
 
+/*
+
 .button {
     position: absolute;
     top: 55%;
@@ -393,7 +473,7 @@
     background-image: url(../../images/arrow-r.svg);
     background-repeat: no-repeat;
     background-position: 90%;
-}
+}*/
 
 //стили для блока dream
 
@@ -550,4 +630,92 @@
     width: 536px;
     margin-left: -461px;
     margin-bottom: -345px;
+}
+
+//стили для блока details
+
+.details_screen {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .details_screen__title {
+        margin-bottom: 50px;
+        margin-left: 50px;
+
+        .title {
+            font-family: "Noah";
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 87px;
+            letter-spacing: 0px;
+            text-align: left;
+            width: 675.31px;
+        }
+
+        .details__text {
+            font-family: "Noah";
+            font-size: 38px;
+            font-weight: 400;
+            line-height: 47px;
+            letter-spacing: 0px;
+            text-align: left;
+            width: 542px;
+        }
+    }
+
+    .arrow-vector {
+        width: 236px;
+        height: 27px;
+        margin-left: -80px;
+    }
+
+    /*
+    .button {
+        margin-bottom: 90px;
+    }
+
+    .button_button--round {
+        margin-top: 70px;
+        background-image: url();
+        background-color: $paleColor;
+        color: $lightColor;
+        font-family: "Noah";
+        height: 124px;
+        width: 124px;
+        left: 0px;
+        top: 0px;
+        border: none;
+        border-radius: 50%;
+    }
+*/
+}
+
+//стили для блока footer
+
+.footer {
+    background-color: $themeColor;
+    font-family: "Geometria";
+    align-items: center;
+    color: $lightColor;
+    max-height: 230px;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    .footer__text--transparent {
+        opacity: 70%;
+        margin-top: 65px;
+        font-size: 16px;
+    }
+
+    .whole-logo {
+        height: 181.27px;
+    }
+
+    .footer--right {
+        display: flex;
+    }
 }

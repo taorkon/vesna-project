@@ -55,7 +55,7 @@
 
 .body,
 .screen {
-  max-width: 100vw;
+  max-width: 1920px;
 }
 
 .button {
@@ -86,6 +86,7 @@
   font-weight: 400;
   font-size: 58px;
   line-height: 72px;
+  text-align: center;
   color: #1A1A18;
 }
 
@@ -167,16 +168,17 @@
   color: #545A2F;
 }
 
-.questions__list {
+.question {
+  display: flex;
+}
+.question .questions__list {
   width: 825px;
 }
-
-.questions__question {
+.question .questions__question {
   list-style-type: none;
   width: 100%;
 }
-
-.questions__label {
+.question .questions__label {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -186,18 +188,15 @@
   font-size: 28px;
   line-height: 35px;
 }
-
-.questions__input {
+.question .questions__input {
   display: none;
 }
-
-.questions__text-holder {
+.question .questions__text-holder {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
 }
-
-.questions__input:checked + .questions__text-holder {
+.question .questions__input:checked + .questions__text-holder {
   max-height: 120px;
 }
 
@@ -240,6 +239,14 @@
 
 .nc-int-icon-rotate.nc-int-icon-state-b .nc-int-icon-b {
   transform: rotate(0);
+}
+
+.get-instruction--small {
+  width: 30%;
+  background-color: #DDE3E1;
+}
+.get-instruction--small .get-instruction__imageholder {
+  width: 473px;
 }
 
 .place__container {
@@ -296,11 +303,13 @@
 }
 
 .place__garden {
-  max-width: 1920;
+  width: 1920px;
   height: 410px;
   margin-top: 465px;
   display: flex;
   gap: 27px;
+  margin-left: 65px;
+  margin-right: 65px;
 }
 
 .place__img-1,
@@ -308,6 +317,61 @@
 .place__img-3 {
   width: 579px;
   height: 410px;
+}
+
+.services__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+}
+
+.services__subtitle {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 47px;
+  text-align: center;
+  color: #1A1A18;
+  margin-top: 80px;
+}
+
+.services__list {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.services__text {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1A1A18;
+  margin-bottom: 20px;
+}
+
+.services__pencil-holder,
+.services__tree-holder,
+.services__fence-holder {
+  width: 399px;
+  height: 678px;
+  margin-bottom: 122px;
+  position: relative;
+  margin-right: 70px;
+}
+
+.pencil-logo,
+.tree-logo,
+.fence-logo {
+  width: 81px;
+  height: 81px;
+  position: absolute;
+  top: 0px;
 }
 
 .services__container {
@@ -388,15 +452,16 @@
   height: 50%;
 }
 
-.button {
-  position: absolute;
-  top: 55%;
-  left: 35%;
-  background-image: url(../../images/arrow-r.svg);
-  background-repeat: no-repeat;
-  background-position: 90%;
-}
+/*
 
+.button {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    background-image: url(../../images/arrow-r.svg);
+    background-repeat: no-repeat;
+    background-position: 90%;
+}*/
 .dream__container {
   display: flex;
   flex-flow: row wrap;
@@ -548,4 +613,80 @@
   width: 536px;
   margin-left: -461px;
   margin-bottom: -345px;
+}
+
+.details_screen {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /*
+      .button {
+          margin-bottom: 90px;
+      }
+
+      .button_button--round {
+          margin-top: 70px;
+          background-image: url();
+          background-color: $paleColor;
+          color: $lightColor;
+          font-family: "Noah";
+          height: 124px;
+          width: 124px;
+          left: 0px;
+          top: 0px;
+          border: none;
+          border-radius: 50%;
+      }
+  */
+}
+.details_screen .details_screen__title {
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+.details_screen .details_screen__title .title {
+  font-family: "Noah";
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 87px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 675.31px;
+}
+.details_screen .details_screen__title .details__text {
+  font-family: "Noah";
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 47px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 542px;
+}
+.details_screen .arrow-vector {
+  width: 236px;
+  height: 27px;
+  margin-left: -80px;
+}
+
+.footer {
+  background-color: #545A2F;
+  font-family: "Geometria";
+  align-items: center;
+  color: #fff;
+  max-height: 230px;
+  height: 230px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.footer .footer__text--transparent {
+  opacity: 70%;
+  margin-top: 65px;
+  font-size: 16px;
+}
+.footer .whole-logo {
+  height: 181.27px;
+}
+.footer .footer--right {
+  display: flex;
 }
