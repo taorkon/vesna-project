@@ -23,6 +23,15 @@
     height: 60px;
 }
 
+.button--shape {
+    border-radius: 50%;
+}
+
+.button--color {
+    background-color: $lightColor;
+    color: $themeColor;
+}
+
 .title {
     font-family: 'Noah';
     font-style: normal;
@@ -262,8 +271,17 @@
 }
 
 .designes__picture {
-    width: 40%;
+    width: 49%;
     height: 50%;
+}
+
+.button {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    background-image: url(../../images/arrow-r.svg);
+    background-repeat: no-repeat;
+    background-position: 90%;
 }
 
 //стили для блока dream
@@ -271,13 +289,13 @@
 .dream__container {
     display: flex;
     flex-flow: row wrap;
-    max-width: 1920px;
+    max-width: 1790px;
     justify-content: space-around;
     align-items: center;
     margin: 65px auto;
-    background-image: url(../../images/round-logo.png);
+    background-image: url(../../images/round-logo.svg);
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: bottom;
     font-family: "Noah";
     font-weight: 400;
     font-size: 24px;

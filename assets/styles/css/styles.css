@@ -65,6 +65,15 @@
   height: 60px;
 }
 
+.button--shape {
+  border-radius: 50%;
+}
+
+.button--color {
+  background-color: #fff;
+  color: #545A2F;
+}
+
 .title {
   font-family: "Noah";
   font-style: normal;
@@ -200,7 +209,9 @@
   margin-right: 65px;
 }
 
-.place__img-1, .place__img-2, .place__img-3 {
+.place__img-1,
+.place__img-2,
+.place__img-3 {
   width: 579px;
   height: 410px;
 }
@@ -241,7 +252,9 @@
   margin-bottom: 20px;
 }
 
-.services__pencil-holder, .services__tree-holder, .services__fence-holder {
+.services__pencil-holder,
+.services__tree-holder,
+.services__fence-holder {
   width: 399px;
   height: 678px;
   margin-bottom: 122px;
@@ -249,9 +262,72 @@
   margin-right: 70px;
 }
 
-.pencil-logo, .tree-logo, .fence-logo {
+.pencil-logo,
+.tree-logo,
+.fence-logo {
   width: 81px;
   height: 81px;
   position: absolute;
   top: 0px;
+}
+
+.designes__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1790px;
+  height: 1070px;
+  margin: 65px auto;
+  position: relative;
+}
+
+.designes__image {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  gap: 5px;
+}
+
+.designes__picture {
+  width: 49%;
+  height: 50%;
+}
+
+.button {
+  position: absolute;
+  top: 55%;
+  left: 35%;
+  background-image: url(../../images/arrow-r.svg);
+  background-repeat: no-repeat;
+  background-position: 90%;
+}
+
+.dream__container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1790px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 65px auto;
+  background-image: url(../../images/round-logo.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  font-family: "Noah";
+  font-weight: 400;
+  font-size: 24px;
+  gap: 20px;
+}
+
+.dream__item {
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dream__logo {
+  width: 20%;
+  height: 50%;
 }
