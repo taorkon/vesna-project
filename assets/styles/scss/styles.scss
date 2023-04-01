@@ -368,6 +368,12 @@
 .location__background {
   width: 883;
   height: 883;
+  wrap: nowrap;
+}
+
+.location__block1 {
+  display: flex;
+  wrap: nowrap;
 }
 
 .location__note {
