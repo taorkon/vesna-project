@@ -341,16 +341,16 @@
   height: 900px; }
 
 .semicircle {
-  height: 882px;
-  width: 862px; }
+  width: 87%; }
 
 .branch-up {
-  height: 450px;
+  width: 30%;
   margin-left: -220px;
   margin-bottom: 53px; }
 
 .location__examples {
-  margin-top: -712px; }
+  margin-top: -712px;
+  flex-wrap: nowrap; }
 
 .location__block {
   margin-top: -832px; }
