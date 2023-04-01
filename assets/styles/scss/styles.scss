@@ -33,6 +33,7 @@
     color: $darkColor;
     text-align: center;
 }
+
 //стили для блока instruction
 .instruction {
     display: flex;
@@ -119,8 +120,8 @@
 }
 
 .place__description-holder {
-width: 1336px;
-height: 417px;
+    width: 1336px;
+    height: 417px;
 }
 
 .description {
@@ -167,16 +168,18 @@ height: 417px;
 }
 
 .place__garden {
-width: 1920px;
-height: 410px;
-margin-top: 465px;
-display: flex;
-gap: 27px;
-margin-left: 65px;
-margin-right: 65px;
+    width: 1920px;
+    height: 410px;
+    margin-top: 465px;
+    display: flex;
+    gap: 27px;
+    margin-left: 65px;
+    margin-right: 65px;
 }
 
-.place__img-1, .place__img-2, .place__img-3 {
+.place__img-1,
+.place__img-2,
+.place__img-3 {
     width: 579px;
     height: 410px;
 }
@@ -191,35 +194,37 @@ margin-right: 65px;
 }
 
 .services__subtitle {
-font-family: 'Noah';
-font-style: normal;
-font-weight: 400;
-font-size: 38px;
-line-height: 47px;
-text-align: center;
-color: $darkColor;
-margin-top: 80px;
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 47px;
+    text-align: center;
+    color: $darkColor;
+    margin-top: 80px;
 }
 
 .services__list {
-font-family: 'Noah';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 30px;
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .services__text {
-font-family: 'Noah';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 30px;
-color: $darkColor;
-margin-bottom: 20px;
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: $darkColor;
+    margin-bottom: 20px;
 }
 
-.services__pencil-holder, .services__tree-holder, .services__fence-holder {
+.services__pencil-holder,
+.services__tree-holder,
+.services__fence-holder {
     width: 399px;
     height: 678px;
     margin-bottom: 122px;
@@ -227,9 +232,67 @@ margin-bottom: 20px;
     margin-right: 70px;
 }
 
-.pencil-logo, .tree-logo, .fence-logo {
-width: 81px;
-height: 81px;
-position: absolute;
-top: 0px;
+.pencil-logo,
+.tree-logo,
+.fence-logo {
+    width: 81px;
+    height: 81px;
+    position: absolute;
+    top: 0px;
+}
+
+//стили для блока designes
+
+.designes__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1790px;
+    height: 1070px;
+    margin: 65px auto;
+    position: relative;
+}
+
+.designes__image {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    gap: 5px;
+}
+
+.designes__picture {
+    width: 49%;
+    height: 50%;
+}
+
+//стили для блока dream
+
+.dream__container {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1920px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 65px auto;
+    background-image: url(../../images/round-logo.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    font-family: "Noah";
+    font-weight: 400;
+    font-size: 24px;
+    gap: 20px;
+}
+
+.dream__item {
+    display: flex;
+    max-width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.dream__logo {
+    width: 20%;
+    height: 50%;
 }
