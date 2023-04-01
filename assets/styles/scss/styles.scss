@@ -355,6 +355,11 @@
 }
 
 //стили для блока location screen
+.location__screen {
+  width: 1920px;
+  height: 1300px;
+}
+
 .description {
   font-family: "Noah";
   font-style: normal;
@@ -368,7 +373,6 @@
 .location__background {
   display: flex;
   justify-content: center;
-  align-content: center;
 }
 
 .location__background-set {
@@ -376,22 +380,22 @@
 }
 
 .semicircle {
-  width: 87%;
+  width: 862px;
 }
 
 .branch-up {
-  width: 30%;
+  width: 253px;
   margin-left: -220px;
   margin-bottom: 53px;
 }
 
 .location__examples {
-  margin-top: -712px;
+  margin-top: -812px;
   flex-wrap: nowrap;
 }
 
 .location__block {
-  margin-top: -832px;
+  margin-top: -532px;
 }
 
 .location__block-1 {
