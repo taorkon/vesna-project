@@ -109,5 +109,30 @@
     color: $themeColor;
   }
 }
+.description {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
 
-//стили для блока location screen
+  color: $darkColor;
+}
+.location__note {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: $darkColor;
+}
+
+.location__image1 {
+  width: 701px;
+  height: 526px;
+}
+.location__image2 {
+  width: 536px;
+  height: 402px;
+}

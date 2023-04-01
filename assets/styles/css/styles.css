@@ -1,56 +1,55 @@
 @font-face {
-  font-family: "Noah";
+  font-family: 'Noah';
   src: url("../../fonts/Noah-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
-}
+  font-display: swap; }
+
 @font-face {
-  font-family: "Geometria";
+  font-family: 'Geometria';
   src: url("../../fonts/Geometria-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
-}
+  font-display: swap; }
+
 @font-face {
-  font-family: "Geometria";
+  font-family: 'Geometria';
   src: url("../../fonts/Geometria-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
-}
+  font-display: swap; }
+
 @font-face {
-  font-family: "Noah";
+  font-family: 'Noah';
   src: url("../../fonts/Noah-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
-}
+  font-display: swap; }
+
 @font-face {
-  font-family: "Marck Script";
+  font-family: 'Marck Script';
   src: url("../../fonts/MarckScript-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
-}
+  font-display: swap; }
+
 @font-face {
-  font-family: "Geometria";
+  font-family: 'Geometria';
   src: url("../../fonts/Geometria-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
-}
+  font-display: swap; }
+
 @font-face {
-  font-family: "Noah";
+  font-family: 'Noah';
   src: url("../../fonts/Noah-RegularItalic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
-  font-display: swap;
-}
+  font-display: swap; }
+
 .screen {
   max-width: 1920px;
-  width: 100vw;
-}
+  width: 100vw; }
 
 .button {
   font-family: "Noah";
@@ -59,11 +58,10 @@
   font-size: 24px;
   line-height: 30px;
   color: #fff;
-  background-color: #545a2f;
+  background-color: #545A2F;
   border: none;
   width: 311px;
-  height: 60px;
-}
+  height: 60px; }
 
 .title {
   font-family: "Noah";
@@ -71,70 +69,60 @@
   font-weight: 400;
   font-size: 58px;
   line-height: 72px;
-  color: #1a1a18;
-}
+  color: #1A1A18; }
 
 .instruction {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-}
-.instruction .instruction__background {
-  height: 333px;
-  width: 100vw;
-  position: absolute;
-  z-index: -1;
-  background-color: #dde3e1;
-}
-.instruction .instruction__imageholder {
-  width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.instruction .instruction__image {
-  width: 1309px;
-}
-.instruction .instruction__contentholder {
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-bottom: 200px;
-}
-.instruction .instruction__interactions {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: 333px;
-}
-.instruction .instruction__text {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
-  color: #1a1a18;
-}
-.instruction .instruction__label {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #1a1a18;
-}
-.instruction .instruction__input {
-  width: 638px;
-  height: 50px;
-  border: none;
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
-  color: #545a2f;
-}
+  align-items: center; }
+  .instruction .instruction__background {
+    height: 333px;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    background-color: #DDE3E1; }
+  .instruction .instruction__imageholder {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .instruction .instruction__image {
+    width: 1309px; }
+  .instruction .instruction__contentholder {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 200px; }
+  .instruction .instruction__interactions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 333px; }
+  .instruction .instruction__text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1A1A18; }
+  .instruction .instruction__label {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1A1A18; }
+  .instruction .instruction__input {
+    width: 638px;
+    height: 50px;
+    border: none;
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #545A2F; }
 
 .description {
   font-family: "Noah";
@@ -143,23 +131,20 @@
   font-size: 48px;
   line-height: 60px;
   text-align: center;
+  color: #1A1A18; }
 
-  color: $darkColor;
-}
 .location__note {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  color: $darkColor;
-}
+  color: #1A1A18; }
 
 .location__image1 {
   width: 701px;
-  height: 526px;
-}
+  height: 526px; }
+
 .location__image2 {
   width: 536px;
-  height: 402px;
-}
+  height: 402px; }
