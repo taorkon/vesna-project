@@ -334,12 +334,10 @@
 
 .location__background {
   width: 883;
-  height: 883;
-  wrap: nowrap; }
+  height: 883; }
 
 .location__block1 {
-  display: flex;
-  wrap: nowrap; }
+  display: flex; }
 
 .location__note {
   font-family: "Noah";
