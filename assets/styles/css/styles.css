@@ -1,56 +1,55 @@
 @font-face {
-  font-family: "Noah";
+  font-family: 'Noah';
   src: url("../../fonts/Noah-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
-}
+  font-display: swap; }
+
 @font-face {
-  font-family: "Geometria";
+  font-family: 'Geometria';
   src: url("../../fonts/Geometria-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
-}
+  font-display: swap; }
+
 @font-face {
-  font-family: "Geometria";
+  font-family: 'Geometria';
   src: url("../../fonts/Geometria-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
-}
+  font-display: swap; }
+
 @font-face {
-  font-family: "Noah";
+  font-family: 'Noah';
   src: url("../../fonts/Noah-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
-}
+  font-display: swap; }
+
 @font-face {
-  font-family: "Marck Script";
+  font-family: 'Marck Script';
   src: url("../../fonts/MarckScript-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
-}
+  font-display: swap; }
+
 @font-face {
-  font-family: "Geometria";
+  font-family: 'Geometria';
   src: url("../../fonts/Geometria-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
-}
+  font-display: swap; }
+
 @font-face {
-  font-family: "Noah";
+  font-family: 'Noah';
   src: url("../../fonts/Noah-RegularItalic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
-  font-display: swap;
-}
+  font-display: swap; }
+
 .screen {
   max-width: 1920px;
-  width: 100vw;
-}
+  width: 100vw; }
 
 .button {
   font-family: "Noah";
@@ -62,8 +61,14 @@
   background-color: #545A2F;
   border: none;
   width: 311px;
-  height: 60px;
-}
+  height: 60px; }
+
+.button--shape {
+  border-radius: 50%; }
+
+.button--color {
+  background-color: #fff;
+  color: #545A2F; }
 
 .title {
   font-family: "Noah";
@@ -71,81 +76,68 @@
   font-weight: 400;
   font-size: 58px;
   line-height: 72px;
-  color: #1A1A18;
-  text-align: center;
-}
+  color: #1A1A18; }
 
 .instruction {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-}
-.instruction .instruction__background {
-  height: 333px;
-  width: 100vw;
-  position: absolute;
-  z-index: -1;
-  background-color: #DDE3E1;
-}
-.instruction .instruction__imageholder {
-  width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.instruction .instruction__image {
-  width: 1309px;
-}
-.instruction .instruction__contentholder {
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-bottom: 200px;
-}
-.instruction .instruction__interactions {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: 333px;
-}
-.instruction .instruction__text {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
-  color: #1A1A18;
-}
-.instruction .instruction__label {
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #1A1A18;
-}
-.instruction .instruction__input {
-  width: 638px;
-  height: 50px;
-  border: none;
-  font-family: "Noah";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
-  color: #545A2F;
-}
+  align-items: center; }
+  .instruction .instruction__background {
+    height: 333px;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    background-color: #DDE3E1; }
+  .instruction .instruction__imageholder {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .instruction .instruction__image {
+    width: 1309px; }
+  .instruction .instruction__contentholder {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 200px; }
+  .instruction .instruction__interactions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 333px; }
+  .instruction .instruction__text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1A1A18; }
+  .instruction .instruction__label {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1A1A18; }
+  .instruction .instruction__input {
+    width: 638px;
+    height: 50px;
+    border: none;
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #545A2F; }
 
 .place__container {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .place__description-holder {
   width: 1336px;
-  height: 417px;
-}
+  height: 417px; }
 
 .description {
   margin-bottom: 53px;
@@ -154,8 +146,7 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 60px;
-  text-align: center;
-}
+  text-align: center; }
 
 .place__text {
   width: 856px;
@@ -169,26 +160,22 @@
   margin-left: 259px;
   margin-right: 221px;
   margin-top: 53px;
-  margin-bottom: 200px;
-}
+  margin-bottom: 200px; }
 
 .place__left {
   position: absolute;
   left: 0px;
-  margin-bottom: 68px;
-}
+  margin-bottom: 68px; }
 
 .place__right {
   position: absolute;
   right: 0px;
-  margin-bottom: 68px;
-}
+  margin-bottom: 68px; }
 
 .branch-l {
   height: 384px;
   width: 511px;
-  border-radius: 0px;
-}
+  border-radius: 0px; }
 
 .place__garden {
   width: 1920px;
@@ -197,20 +184,19 @@
   display: flex;
   gap: 27px;
   margin-left: 65px;
-  margin-right: 65px;
-}
+  margin-right: 65px; }
 
-.place__img-1, .place__img-2, .place__img-3 {
+.place__img-1,
+.place__img-2,
+.place__img-3 {
   width: 579px;
-  height: 410px;
-}
+  height: 410px; }
 
 .services__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 70px;
-}
+  gap: 70px; }
 
 .services__subtitle {
   font-family: "Noah";
@@ -220,16 +206,14 @@
   line-height: 47px;
   text-align: center;
   color: #1A1A18;
-  margin-top: 80px;
-}
+  margin-top: 80px; }
 
 .services__list {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 30px;
-}
+  line-height: 30px; }
 
 .services__text {
   font-family: "Noah";
@@ -238,20 +222,124 @@
   font-size: 24px;
   line-height: 30px;
   color: #1A1A18;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
-.services__pencil-holder, .services__tree-holder, .services__fence-holder {
+.services__pencil-holder,
+.services__tree-holder,
+.services__fence-holder {
   width: 399px;
   height: 678px;
   margin-bottom: 122px;
   position: relative;
-  margin-right: 70px;
-}
+  margin-right: 70px; }
 
-.pencil-logo, .tree-logo, .fence-logo {
+.pencil-logo,
+.tree-logo,
+.fence-logo {
   width: 81px;
   height: 81px;
   position: absolute;
-  top: 0px;
-}
+  top: 0px; }
+
+.designes__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1790px;
+  height: 1070px;
+  margin: 65px auto;
+  position: relative; }
+
+.designes__image {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  gap: 5px; }
+
+.designes__picture {
+  width: 49%;
+  height: 50%; }
+
+.button {
+  position: absolute;
+  top: 55%;
+  left: 35%;
+  background-image: url(../../images/arrow-r.svg);
+  background-repeat: no-repeat;
+  background-position: 90%; }
+
+.dream__container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1790px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 65px auto;
+  background-image: url(../../images/round-logo.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  font-family: "Noah";
+  font-weight: 400;
+  font-size: 24px;
+  gap: 20px; }
+
+.dream__item {
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; }
+
+.dream__logo {
+  width: 30%;
+  height: 50%; }
+
+.privilege__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  height: 832px;
+  gap: 100px;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: #dde3e1; }
+
+.privilege__items1,
+.privilege__items2 {
+  display: flex;
+  justify-content: space-around; }
+
+.privilege__image {
+  width: 30%;
+  height: 50%; }
+
+.privilege__way {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.description {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  color: #1A1A18; }
+
+.location__note {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1A1A18; }
+
+.location__image1 {
+  width: 701px;
+  height: 526px; }
+
+.location__image2 {
+  width: 536px;
+  height: 402px; }

@@ -17,7 +17,6 @@
   <link rel="preload" href="/assets/fonts/Noah-RegularItalic.woff" as="font" type="font/woff" crossorigin />
 </head>
 <!--СДЕЛАЙ GIT PULL!!!!!!-->
-
 <body class="body">
   <!--Алиса\Таня-->
   <!--Переиспользуем vesna-logo, button button--color, branch-r, arrow-r, arrow-l, scroll-->
@@ -41,7 +40,7 @@
             Создаем не просто красивый сад с картинки,
             <strong>а место, куда захочется возвращаться.</strong>
           </h3>
-          <h5 class="place__text">
+          <h5 clas="place__text">
             От проекта до ухода за садом – один подрядчик. Мы несем
             ответственность за все этапы работ. Ваш сад будет органичен и
             выполнен в одном стиле. Мы делаем участок практичным, безопасным и
@@ -52,6 +51,10 @@
             непредвиденные расходы.
           </h5>
         </div>
+      </div>
+      <div class="place__left">
+        <img class="branch-l" src="/assets/images/branch-l.svg" alt="branch-l" />
+      </div>
       </div>
       <div class="place__left">
         <img class="branch-l" src="/assets/images/branch-l.svg" alt="branch-l" />
@@ -67,13 +70,47 @@
     </section>
     <!--Арина-->
     <!--Переиспользуем description, branch-up-->
-    <section class="location screen"></section>
+    <section class="location screen">
+      <h3 class="description">
+        <b>Доверьте свой участок профессионалам - </b>пусть они позаботятся о
+        ландшафтном дизайне и благоустройстве
+      </h3>
+      <div class="location__background">
+        <img class="semicircle" src="assets/images/semicircle.svg" alt="полукруг" />
+        <img class="branch-up" src="assets/images/branch-up.svg" alt="веточка" />
+      </div>
+      <h5 class="location__note">Пример 3D-визуализации</h5>
+      <img class="location__image1" src="assets/images/location_screen1.png" alt="Сад" />
+      <img class="location__image2" src="assets/images/location_screen2.png" alt="Сад" />
+      <div class="location__block1">
+        <img class="tick-circle" src="assets/images/tick-circle.svg" alt="Галочка" />
+        <h5 class="location__block-note">
+          Вы оцените будущий ландшафт с помощью 3D-визуализации и, если это
+          требуется, внесете изменения.
+        </h5>
+      </div>
+      <div class="location__block2">
+        <img class="tick-circle" src="assets/images/tick-circle.svg" alt="Галочка" />
+        <h5 class="location__block-note">
+          Вам не придется контролировать качество нашей работы: отдыхайте и
+          занимайтесь своими делами, пока специалисты технадзора следят за
+          процессом.
+        </h5>
+      </div>
+      <div class="location__block3">
+        <img class="tick-circle" src="assets/images/tick-circle.svg" alt="Галочка" />
+        <h5 class="location__block-note">
+          Вы подарите себе красивый и ухоженный сад, переложите заботы по
+          уходу на наши плечи и получите гарантию на все работы.
+        </h5>
+      </div>
+    </section>
     <!--Вика-->
     <!--Переиспользуем title, pencil-logo, tree-logo,fence-logo, button-->
     <section class="services screen">
       <h2 class="title">Что мы делаем</h2>
       <div class="services__container">
-        <div class="services__pencil-holder">
+        <div class="services__-pencil-holder">
           <h4 class="services__subtitle">Проектирование</h4>
           <img class="pencil-logo" src="/assets/images/pencil-logo.svg" alt="pencil logo" />
           <ul class="services__list">
@@ -118,7 +155,7 @@
         <div class="services__fence-holder">
           <h4 class="services__subtitle">Благоустройство</h4>
           <img class="fence-logo" src="/assets/images/fence-logo.svg" alt="fence logo" />
-          <ul class="services__list">
+          <ul clas="services__list">
             <li class="services__text">
               Все виды строительно-монтажных работ по благоустройству
             </li>
@@ -133,6 +170,8 @@
           </ul>
         </div>
         <button class="button">Выбрать услугу</button>
+      </div>
+      <button class="button">Выбрать услугу</button>
       </div>
     </section>
     <!--Таня-->
@@ -167,19 +206,20 @@
           </form>
           <button class="button">Хочу инструкцию</button>
         </div>
-      </div>
     </section>
     <!--Аня-->
     <!--Переиспользуем title, button button--shape button--color, arrow-r-->
     <section class="designes screen">
-      <div class="designes-container">
+      <div class="designes__container">
         <h2 class="title">Наши проекты</h2>
         <div class="designes__image">
           <img src="./assets/images/designes__picture1.jpg" alt="picture1" class="designes__picture" />
           <img src="./assets/images/designes__picture2.jpg" alt="picture2" class="designes__picture" />
           <img src="./assets/images/designes__picture3.jpg" alt="picture3" class="designes__picture" />
           <img src="./assets/images/designes__picture4.jpg" alt="picture4" class="designes__picture" />
-          <button class="button--shape button--color">Все проекты</button>
+          <button class="button button--shape button--color">
+            Все проекты
+          </button>
         </div>
       </div>
     </section>
@@ -187,43 +227,82 @@
     <!--Переиспользуем title, round-logo-->
     <section class="dream screen">
       <div class="dream__container">
-        <h2 class="title">4 шага до реализации проекта вашей мечты</h2>
-        <div class="dream__textholder">
-          <div>
-            <img class="dream__logo" src="./assets/images/dream__img01.png" alt="" />
-            <p class="dream__text">
-              Расскажите нам, что вы хотите увидеть на своем участке
-              Побеседуйте с нашим специалистом. Он приедет к вам в любое
-              удобное время.
-            </p>
-          </div>
+        <h2 class="title">
+          4 шага до реализации проекта <strong>вашей мечты</strong>
+        </h2>
 
-          <img class="dream__logo" src="" alt="" />
+        <div class="dream__item">
+          <img class="dream__logo" src="./assets/images/dream__img01.png" alt="" />
           <p class="dream__text">
-            Оцените проект, который разработают наши специалисты, и внесите
-            изменения Архитектор разработает проект ландшафтного дизайна и
+            <strong>Расскажите нам, что вы хотите увидеть на своем участке</strong>
+            <br />Побеседуйте с нашим специалистом. Он приедет к вам в любое
+            удобное время.
+          </p>
+        </div>
+        <div class="dream__item">
+          <img class="dream__logo" src="./assets/images/dream__img02.png" alt="" />
+          <p class="dream__text">
+            <strong>Оцените проект, который разработают наши специалисты, и внесите
+              изменения</strong><br />Архитектор разработает проект ландшафтного дизайна и
             сделает 3D-визуализацию.
           </p>
-
-          <img class="dream__logo" src="" alt="" />
+        </div>
+        <div class="dream__item">
+          <img class="dream__logo" src="./assets/images/dream__img03.png" alt="" />
           <p class="dream__text">
-            Дождитесь окончания ландшафтных работ Вы получите идеальный
-            участок с хорошим дренажом, мощеными дорожками и площадками,
-            высаженными растениями — деревьями, кустарниками, цветами и
-            газоном.
+            <strong>Дождитесь окончания ландшафтных работ</strong><br />Вы
+            получите идеальный участок с хорошим дренажом, мощеными дорожками
+            и площадками, высаженными растениями — деревьями, кустарниками,
+            цветами и газоном.
           </p>
-
-          <img class="dream__logo" src="" alt="" />
+        </div>
+        <div class="dream__item">
+          <img class="dream__logo" src="./assets/images/dream__img04.png" alt="" />
           <p class="dream__text">
-            Делегируйте уход за участком профессионалам При необходимости мы
-            будем приезжать регулярно и следить за состоянием участка.
+            <strong>Делегируйте уход за участком профессионалам</strong><br />При необходимости мы будем приезжать
+            регулярно и следить за
+            состоянием участка.
           </p>
         </div>
       </div>
     </section>
     <!--Аня-->
     <!--Переиспользуем title, way-logo, flower-logo, money-logo, stone-logo, shield-logo-->
-    <section class="privilege screen"></section>
+    <section class="privilege screen">
+      <div class="privilege__container">
+        <h2 class="title">Почему нас выбирают</h2>
+
+        <div class="privilege__items1">
+          <div class="privilege__way">
+            <img class="privilege__image" src="./assets/images/way-logo.svg" alt="" />
+            <p class="privilege__text">
+              Создаем проекты, которые точно можно реализовать
+            </p>
+          </div>
+          <div class="privilege__way">
+            <img class="privilege__image" src="./assets/images/flower-logo.svg" alt="" />
+            <p class="privilege__text">Наши объекты легко эксплуатировать</p>
+          </div>
+          <div class="privilege__way">
+            <img class="privilege__image" src="./assets/images/money-logo.svg" alt="" />
+            <p class="privilege__text">Делаем с умом под любой бюджет</p>
+          </div>
+        </div>
+
+        <div class="privilege__items2">
+          <div class="privilege__way">
+            <img class="privilege__image" src="./assets/images/stone-logo.svg" alt="" />
+            <p class="privilege__text">
+              У нас высокое качество посадочного материала
+            </p>
+          </div>
+          <div class="privilege__way">
+            <img class="privilege__image" src="./assets/images/shield-logo.svg" alt="" />
+            <p class="privilege__text">Даем гарантию на все виды работ</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--Арина-->
     <!--Переиспользуем title, tree-logo, arrow-l, arrow-r, scroll-->
     <section class="feedback screen">
