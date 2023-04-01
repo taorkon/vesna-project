@@ -111,20 +111,21 @@
 .instruction .instruction__image {
   width: 1309px;
 }
-.instruction .instruction__contentholder {
+
+.get-instruction {
   width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-bottom: 200px;
 }
-.instruction .instruction__interactions {
+.get-instruction .get-instruction__interactions {
   display: flex;
   flex-direction: column;
   gap: 20px;
   height: 333px;
 }
-.instruction .instruction__text {
+.get-instruction .get-instruction__text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -132,7 +133,7 @@
   line-height: 30px;
   color: #1A1A18;
 }
-.instruction .instruction__label {
+.get-instruction .get-instruction__label {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -140,7 +141,7 @@
   line-height: 20px;
   color: #1A1A18;
 }
-.instruction .instruction__input {
+.get-instruction .get-instruction__input {
   width: 638px;
   height: 50px;
   border: none;
@@ -150,6 +151,81 @@
   font-size: 24px;
   line-height: 30px;
   color: #545A2F;
+}
+
+.questions__list {
+  width: 825px;
+}
+
+.questions__question {
+  list-style-type: none;
+  width: 100%;
+}
+
+.questions__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.questions__input {
+  display: none;
+}
+
+.questions__text-holder {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.questions__input:checked + .questions__text-holder {
+  max-height: 120px;
+}
+
+.nc-int-icon-rotate {
+  --animation-duration: 0.4s;
+}
+
+.nc-int-icon {
+  position: relative;
+}
+
+.nc-int-icon-b {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  left: calc(50% - 0.5em);
+  opacity: 0;
+}
+
+.nc-int-icon-rotate .nc-int-icon-a,
+.nc-int-icon-rotate .nc-int-icon-b {
+  transition: opacity 0s calc(var(--animation-duration) / 2), transform var(--animation-duration);
+  transform-origin: center center;
+}
+
+.nc-int-icon-rotate .nc-int-icon-b {
+  transform: rotate(90deg) scale(0.6);
+}
+
+.nc-int-icon-state-b .nc-int-icon-a {
+  opacity: 0;
+}
+
+.nc-int-icon-state-b .nc-int-icon-b {
+  opacity: 1;
+}
+
+.nc-int-icon-rotate.nc-int-icon-state-b .nc-int-icon-a {
+  transform: rotate(-90deg) scale(0.6);
+}
+
+.nc-int-icon-rotate.nc-int-icon-state-b .nc-int-icon-b {
+  transform: rotate(0);
 }
 
 .place__container {
