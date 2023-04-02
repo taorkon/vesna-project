@@ -519,6 +519,15 @@
   align-items: center;
 }
 
+.location__screen {
+  height: 1300px;
+}
+
+.location__content {
+  display: flex;
+  justify-content: center;
+}
+
 .description {
   font-family: "Noah";
   font-style: normal;
@@ -532,7 +541,6 @@
 .location__background {
   display: flex;
   justify-content: center;
-  align-content: center;
 }
 
 .location__background-set {
@@ -540,39 +548,39 @@
 }
 
 .semicircle {
-  width: 87%;
+  width: 862px;
 }
 
 .branch-up {
-  width: 30%;
+  width: 253px;
   margin-left: -220px;
   margin-bottom: 53px;
 }
 
 .location__examples {
-  margin-top: -712px;
+  margin-top: -812px;
   flex-wrap: nowrap;
 }
 
 .location__block {
-  margin-top: -832px;
+  margin-top: -732px;
 }
 
 .location__block-1 {
   display: flex;
-  margin-left: 893px;
+  margin-left: 593px;
 }
 
 .location__block-2 {
   display: flex;
-  margin-left: 943px;
+  margin-left: 643px;
   margin-top: 156px;
   margin-bottom: 161px;
 }
 
 .location__block-3 {
   display: flex;
-  margin-left: 979px;
+  margin-left: 679px;
 }
 
 .tick-circle {
