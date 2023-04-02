@@ -55,7 +55,7 @@
 
 .body,
 .screen {
-  max-width: 1920px;
+  max-width: 100vw;
 }
 
 .button {
@@ -73,6 +73,8 @@
 
 .button--shape {
   border-radius: 50%;
+  width: 191px;
+  height: 191px;
 }
 
 .button--color {
@@ -174,6 +176,13 @@
 .question .questions__list {
   width: 825px;
 }
+.question .questions__list {
+  width: 825px;
+}
+.question .questions__question {
+  list-style-type: none;
+  width: 100%;
+}
 .question .questions__question {
   list-style-type: none;
   width: 100%;
@@ -190,6 +199,14 @@
 }
 .question .questions__input {
   display: none;
+}
+.question .questions__input {
+  display: none;
+}
+.question .questions__text-holder {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
 }
 .question .questions__text-holder {
   max-height: 0;
@@ -303,13 +320,11 @@
 }
 
 .place__garden {
-  width: 1920px;
+  max-width: 1920;
   height: 410px;
   margin-top: 465px;
   display: flex;
   gap: 27px;
-  margin-left: 65px;
-  margin-right: 65px;
 }
 
 .place__img-1,
@@ -429,96 +444,237 @@
   top: 0px;
 }
 
-.designes__container {
+.designes .designes__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1790px;
+  max-width: 1920px;
   height: 1070px;
   margin: 65px auto;
   position: relative;
 }
-
-.designes__image {
+.designes .designes__image {
   display: flex;
   flex-flow: row wrap;
   align-content: space-between;
   gap: 5px;
 }
-
-.designes__picture {
+.designes .designes__img {
   width: 49%;
   height: 50%;
 }
-
-/*
-
-.button {
-    position: absolute;
-    top: 55%;
-    left: 35%;
-    background-image: url(../../images/arrow-r.svg);
-    background-repeat: no-repeat;
-    background-position: 90%;
-}*/
-.dream__container {
-  display: flex;
-  flex-flow: row wrap;
-  max-width: 1790px;
-  justify-content: space-around;
-  align-items: center;
-  margin: 65px auto;
-  background-image: url(../../images/round-logo.svg);
+.designes .button {
+  position: absolute;
+  top: 50%;
+  left: 41%;
+  background-image: url(../../images/arrow-r.svg);
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.dream .dream__container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1440px;
+  justify-content: space-around;
+  align-items: center;
+  /* background-image: url(../../images/round-logo.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;*/
   font-family: "Noah";
   font-weight: 400;
   font-size: 24px;
   gap: 20px;
 }
-
-.dream__item {
+.dream .dream__title {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dream .dream__item {
   display: flex;
   max-width: 600px;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
-
-.dream__logo {
-  width: 30%;
-  height: 50%;
+.dream .dream__number {
+  color: #545A2F;
+  font-family: "Marck Script";
+  font-size: 65px;
+}
+.dream .dream__image {
+  position: absolute;
 }
 
-.privilege__container {
+.privilege .privilege__container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   max-width: 1920px;
   height: 832px;
   gap: 100px;
   margin: 0 auto;
   justify-content: center;
-  background-color: #dde3e1;
+  font-family: "Noah";
+  background-color: #DDE3E1;
 }
-
-.privilege__items1,
-.privilege__items2 {
+.privilege .privilege__items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  gap: 50px;
 }
-
-.privilege__image {
+.privilege .privilege__image {
   width: 30%;
   height: 50%;
 }
-
-.privilege__way {
+.privilege .privilege__part {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 650px;
   flex-direction: column;
   align-items: center;
 }
 
+/*
+font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: $darkColor;
+
+    .description {
+        font-family: "Noah";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        margin-left: 380px;
+        margin-right: 380px;
+        color: $darkColor;
+    }
+
+    .location__background {
+        display: flex;
+        justify-content: center;
+    }
+
+    .location__background-set {
+        height: 900px;
+    }
+
+    .semicircle {
+        width: 862px;
+    }
+
+    .branch-up {
+        width: 253px;
+        margin-left: -220px;
+        margin-bottom: 53px;
+    }
+
+    .location__content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .location__examples {
+        margin-top: -812px;
+        flex-wrap: nowrap;
+        height: 858px;
+        margin-top: -812px;
+    }
+
+    .location__examples-note {
+        margin-left: 270px;
+        margin-bottom: 14px;
+        margin-top: 0px;
+        font-family: "Noah";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .location__examples-image1 {
+        width: 701px;
+        height: 526px;
+        margin-left: 87px;
+    }
+
+    .location__examples-image2 {
+        width: 536px;
+        height: 402px;
+        margin-left: 240px;
+        margin-bottom: -575px;
+    }
+
+    .location__block {
+        margin-top: -732px;
+    }
+
+    .location__block-1 {
+        display: flex;
+        margin-left: 593px;
+    }
+
+    .location__block-2 {
+        display: flex;
+        margin-left: 643px;
+        margin-top: 156px;
+        margin-bottom: 161px;
+    }
+
+    .location__block-3 {
+        display: flex;
+        margin-left: 679px;
+    }
+
+    .tick-circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .location__examples-note {
+        margin-left: 270px;
+        margin-bottom: 14px;
+        margin-top: 0px;
+        font-family: "Noah";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .location__block-note {
+        width: 582px;
+        height: 120px;
+        margin: 0px;
+        font-family: "Noah";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: $darkColor;
+    }
+
+    .location__examples-image1 {
+        width: 701px;
+        height: 526px;
+        margin-left: 87px;
+    }
+
+    .location__examples-image2 {
+        width: 536px;
+        margin-left: -461px;
+        margin-bottom: -345px;
+    }
+
+    */
 .location__screen {
   height: 1300px;
 }
