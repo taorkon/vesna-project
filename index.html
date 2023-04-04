@@ -22,14 +22,40 @@
   <!--Алиса\Таня-->
   <!--Переиспользуем vesna-logo, button button--color, branch-r, arrow-r, arrow-l, scroll-->
   <header class="header screen">
-    <img class="vesna-logo" src="vesna_logo_header.svg" alt="main logo" />
-    <nav class="navigation"></nav>
-    <button class="button button--color">+7 (921) 888 88 88</button>
-    <p class="dream__text">Бесплатная консультация</p>
-    <p class="dream__text">Ландшафтная студия VESNA</p>
-    <h1 class="title">Создаем авторские ландшафты с вашим характером</h1>
-    <h2 class="title__sub">От идеи до полной реализации</h2>
-    <img class="branch-r" src="branch_right.svg" alt="tree branch " />
+    <div class="header__top">
+      <img class="vesna-logo" src="assets/images/vesna-logo.svg" alt="main logo" />
+      <div class="header__top-right">
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item"> <a class="header__link" href="#">Главная</a></li>
+            <li class="header__item"> <a class="header__link" href="#">Портфолио</a></li>
+            <li class="header__item"> <a class="header__link" href="#">Услуги</a></li>
+            <li class="header__item"> <a class="header__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__button-holder">
+          <button class="button button--light">+7 (921) 888 88 88</button>
+          <div class="header__button-text-holder">
+            <p class="header__button-text">Бесплатная консультация</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__middle">
+      <p class="header__text">Ландшафтная студия VESNA</p>
+      <h1 class="main-title">Создаем авторские ландшафты<br> с вашим характером</h1>
+      <h2 class="title title--header">От идеи до полной реализации</h2>
+      <img class="branch-r" src="assets/images/branch-r.svg" alt="tree branch " />
+    </div>
+    <div class="header__bottom">
+      <div class="header__image-holder"><img src="assets/images/header__project-image.png" alt=""
+          class="header__project-image"></div>
+      <div class="header__bottom-right">
+        <div class="header__arrows"><img src="assets/images/arrow-l.svg" alt="" class="arrow-l"><img
+            src="assets/images/arrow-r-light.svg" alt="" class="arrow-r"></div>
+        <div class="header__scroll"><img src="assets/images/header__scroll.svg" alt="" class="scroll"></div>
+      </div>
+    </div>
   </header>
   <main class="main">
     <!--Вика-->
@@ -38,10 +64,10 @@
       <div class="place__container">
         <div class="place__description-holder">
           <h3 class="description">
-            Создаем не просто красивый сад с картинки,
+            Создаем не просто красивый сад с картинки,<br>
             <strong>а место, куда захочется возвращаться.</strong>
           </h3>
-          <h5 clas="place__text">
+          <h5 class="place__text">
             От проекта до ухода за садом – один подрядчик. Мы несем
             ответственность за все этапы работ. Ваш сад будет органичен и
             выполнен в одном стиле. Мы делаем участок практичным, безопасным и
@@ -68,7 +94,7 @@
     </section>
     <!--Арина-->
     <!--Переиспользуем description, branch-up-->
-    <section class="location__screen">
+    <section class="location screen">
       <h3 class="description">
         <b>Доверьте свой участок профессионалам -</b> пусть они позаботятся о
         ландшафтном дизайне и благоустройстве
@@ -107,42 +133,17 @@
               Вы подарите себе красивый и ухоженный сад, переложите заботы по
               уходу на наши плечи и получите гарантию на все работы.
             </h5>
-            <h5 class="location__examples-note">Пример 3D-визуализации</h5>
-            <img class="location__examples-image1" src="assets/images/location_screen1.png" alt="Сад" />
-            <img class="location__examples-image2" src="assets/images/location_screen2.png" alt="Сад" />
-          </div>
-          <div class="location__block">
-            <div class="location__block-1">
-              <img class="tick-circle" src="assets/images/tick-circle.svg" alt="Галочка" />
-              <h5 class="location__block-note">
-                Вы оцените будущий ландшафт с помощью 3D-визуализации и, если это
-                требуется, внесете изменения.
-              </h5>
-            </div>
-            <div class="location__block-2">
-              <img class="tick-circle" src="assets/images/tick-circle.svg" alt="Галочка" />
-              <h5 class="location__block-note">
-                Вам не придется контролировать качество нашей работы: отдыхайте и
-                занимайтесь своими делами, пока специалисты технадзора следят за
-                процессом.
-              </h5>
-            </div>
-            <div class="location__block-3">
-              <img class="tick-circle" src="assets/images/tick-circle.svg" alt="Галочка" />
-              <h5 class="location__block-note">
-                Вы подарите себе красивый и ухоженный сад, переложите заботы по
-                уходу на наши плечи и получите гарантию на все работы.
-              </h5>
-            </div>
           </div>
         </div>
+      </div>
     </section>
+
     <!--Вика-->
     <!--Переиспользуем title, pencil-logo, tree-logo,fence-logo, button-->
     <section class="services screen">
       <h2 class="title">Что мы делаем</h2>
       <div class="services__container">
-        <div class="services__pencil-holder">
+        <div class="services__content">
           <h4 class="services__subtitle">Проектирование</h4>
           <img class="pencil-logo" src="/assets/images/pencil-logo.svg" alt="pencil logo" />
           <ul class="services__list">
@@ -163,7 +164,7 @@
             </li>
           </ul>
         </div>
-        <div class="services__tree-holder">
+        <div class="services__content">
           <h4 class="services__subtitle">Озеленение</h4>
           <img class="tree-logo" src="/assets/images/tree-logo.svg" alt="tree logo" />
           <ul class="services__list">
@@ -184,10 +185,10 @@
             <li class="services__text">Сервисное обслуживание</li>
           </ul>
         </div>
-        <div class="services__fence-holder">
+        <div class="services__content">
           <h4 class="services__subtitle">Благоустройство</h4>
           <img class="fence-logo" src="/assets/images/fence-logo.svg" alt="fence logo" />
-          <ul clas="services__list">
+          <ul class="services__list">
             <li class="services__text">
               Все виды строительно-монтажных работ по благоустройству
             </li>
@@ -240,6 +241,8 @@
     </section>
     <!--Аня-->
     <!--Переиспользуем title, button button--shape button--color, arrow-r-->
+    <!--Аня-->
+    <!--Переиспользуем title, button button--shape button--color, arrow-r-->
     <section class="designes screen">
       <div class="designes__container">
         <h2 class="title">Наши проекты</h2>
@@ -248,22 +251,23 @@
           <img src="./assets/images/designes__img2.jpg" alt="picture2" class="designes__img" />
           <img src="./assets/images/designes__img3.jpg" alt="picture3" class="designes__img" />
           <img src="./assets/images/designes__img4.jpg" alt="picture4" class="designes__img" />
-          <button class="button button--shape button--color">
-            Все проекты
+
+          <button class="button button--shape button--light">
+            <h5 class="button__text">Все проекты</h5> <img src="assets/images/arrow-r.svg" alt="" class="arrow-r">
           </button>
         </div>
+
       </div>
     </section>
     <!--Аня-->
     <!--Переиспользуем title, round-logo-->
     <section class="dream screen">
+      <div class="dream__title">
+        <h2 class="title">
+          4 шага до реализации проекта <strong><br>вашей мечты</strong>
+        </h2>
+      </div>
       <div class="dream__container">
-        <div class="dream__title">
-          <h2 class="title">
-            4 шага до реализации проекта <strong><br>вашей мечты</strong>
-          </h2>
-        </div>
-
         <div class="dream__item">
           <p class="dream__number">01</p>
           <p class="dream__text">
@@ -292,7 +296,8 @@
         <div class="dream__item">
           <p class="dream__number">04</p>
           <p class="dream__text">
-            <strong>Делегируйте уход за участком профессионалам</strong><br />При необходимости мы будем приезжать
+            <strong>Делегируйте уход за участком профессионалам</strong><br />При необходимости мы будем
+            приезжать
             регулярно и следить за
             состоянием участка.
           </p>
@@ -304,244 +309,265 @@
     <!--Переиспользуем title, way-logo, flower-logo, money-logo, stone-logo, shield-logo-->
     <section class="privilege screen">
       <div class="privilege__container">
-        <h2 class="title">Почему нас выбирают</h2>
+        <div class="privilege__titleholder">
+          <h2 class="title">Почему нас выбирают</h2>
+        </div>
 
-        <div class="privilege__items">
+        <div class="privilege__up">
           <div class="privilege__part">
             <img class="privilege__image way-logo" src="./assets/images/way-logo.svg" alt="" />
             <p class="privilege__text">
-              Создаем проекты, которые точно можно реализовать
+              Создаем проекты, которые<br> точно можно реализовать
             </p>
           </div>
           <div class="privilege__part">
             <img class="privilege__image flower-logo" src="./assets/images/flower-logo.svg" alt="" />
-            <p class="privilege__text">Наши объекты легко эксплуатировать</p>
+            <p class="privilege__text">Наши объекты<br> легко эксплуатировать</p>
           </div>
           <div class="privilege__part">
             <img class="privilege__image money-logo" src="./assets/images/money-logo.svg" alt="" />
-            <p class="privilege__text">Делаем с умом под любой бюджет</p>
+            <p class="privilege__text">Делаем с умом<br> под любой бюджет</p>
           </div>
+        </div>
+        <div class="privilege__down">
           <div class="privilege__part">
             <img class="privilege__image stone-logo" src="./assets/images/stone-logo.svg" alt="" />
             <p class="privilege__text">
-              У нас высокое качество посадочного материала
+              У нас высокое качество<br> посадочного материала
             </p>
           </div>
           <div class="privilege__part">
             <img class="privilege__image shield-logo" src="./assets/images/shield-logo.svg" alt="" />
-            <p class="privilege__text">Даем гарантию на все виды работ</p>
+            <p class="privilege__text">Даем гарантию на все<br> виды работ</p>
           </div>
         </div>
+      </div>
       </div>
     </section>
     <!--Арина-->
     <!--Переиспользуем title, tree-logo, arrow-l, arrow-r, scroll-->
     <section class="feedback screen">
-      <h2 class="title">Отзывы о нас</h2>
       <div class="feedback__container">
-        <img class="feedback__garden" src="assets/images/garden_feedback.png" alt="Сад" />
-        <div>
-          <img class="tree-logo" src="assets/images/tree-logo.svg" alt="дерево" />
-
-          <h3>Анна Смирнова</h3>
-          <p>Благоустройство сада в Агалатово</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu uis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            eu
-          </p>
-          <img class="arrow-l" src="assets/images/arrow-l.svg" alt="стрелка влево" />
-          <img class="arrow-r" src="assets/images/arrow-r.svg" alt="стрелка вправо" />
+        <div class="feedback__container-title">
+          <h2 class="title">Отзывы о нас</h2>
         </div>
-        <img class="scroll" src="assets/images/scroll.svg" alt="прокрутка фото" />
+        <div class="feedback__content">
+          <img class="feedback__content-image" src="assets/images/garden_feedback.png" alt="Сад" />
+          <div class="feedback__content-review">
+            <img class="tree-logo" src="assets/images/tree-logo.svg" alt="дерево" />
+
+            <h4 class="feedback__content-text-name">Анна Смирнова</h4>
+            <h5 class="feedback__content-text-1">Благоустройство сада в Агалатово</h5>
+            <h5 class="feedback__content-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu uis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore
+              eu
+            </h5>
+            <div class="feedback__content-review-arrows">
+              <img class="arrow-l" src="assets/images/arrow-l.svg" alt="стрелка влево" />
+              <img class="arrow-r" src="assets/images/arrow-r.svg" alt="стрелка вправо" />
+            </div>
+          </div>
+        </div>
+        <div class="feedback__container-scroll">
+          <img class="scroll" src="assets/images/scroll.svg" alt="прокрутка фото" />
+        </div>
       </div>
     </section>
     <!--Таня-->
     <!--Переиспользуем title, instruction instruction--size, button-->
     <section class="questions screen">
-      <div class="questions__content-holder">
-        <div class="questions__title-holder"></div>
-        <div class="questions__question-holder">
-          <ul class="questions__list">
-            <li class="questions__question">
-              <label for="first" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit? <span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
-                    height="48" width="48">
-                    <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
-                      <g class="nc-int-icon-a">
-                        <path
-                          d="M24 0.855469C36.7807 0.855469 47.1429 11.2177 47.1429 23.9983C47.1429 36.779 36.7807 47.1412 24 47.1412C11.2194 47.1412 0.857178 36.779 0.857178 23.9983C0.857178 11.2177 11.2194 0.855469 24 0.855469Z"
-                          fill="#545A2F"></path>
-                        <line x1="14.25" y1="22.75" x2="33.75" y2="22.75" stroke="white" stroke-width="2.5"
-                          stroke-linecap="round"></line>
+      <div class="questions__container">
+        <div class="questions__content-holder">
+          <div class="questions__title-holder">
+            <h2 class="title">Часто задаваемые вопросы</h2>
+          </div>
+          <div class="questions__question-holder">
+            <ul class="questions__list">
+              <li class="questions__question">
+                <label for="first" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit? <span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                      height="48" width="48">
+                      <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
+                        <g class="nc-int-icon-a">
+                          <path
+                            d="M24 0.855469C36.7807 0.855469 47.1429 11.2177 47.1429 23.9983C47.1429 36.779 36.7807 47.1412 24 47.1412C11.2194 47.1412 0.857178 36.779 0.857178 23.9983C0.857178 11.2177 11.2194 0.855469 24 0.855469Z"
+                            fill="#545A2F"></path>
+                          <line x1="14.25" y1="22.75" x2="33.75" y2="22.75" stroke="white" stroke-width="2.5"
+                            stroke-linecap="round"></line>
+                        </g>
+                        <g class="nc-int-icon-b">
+                          <path
+                            d="M11.2 21.9992C11.2 21.6412 11.3422 21.2978 11.5954 21.0446C11.8485 20.7915 12.1919 20.6492 12.55 20.6492H20.65V12.5492C20.65 12.1912 20.7922 11.8478 21.0454 11.5946C21.2985 11.3415 21.6419 11.1992 22 11.1992C22.358 11.1992 22.7014 11.3415 22.9545 11.5946C23.2077 11.8478 23.35 12.1912 23.35 12.5492V20.6492H31.4499C31.808 20.6492 32.1514 20.7915 32.4045 21.0446C32.6577 21.2978 32.7999 21.6412 32.7999 21.9992C32.7999 22.3573 32.6577 22.7006 32.4045 22.9538C32.1514 23.207 31.808 23.3492 31.4499 23.3492H23.35V31.4492C23.35 31.8073 23.2077 32.1506 22.9545 32.4038C22.7014 32.657 22.358 32.7992 22 32.7992C21.6419 32.7992 21.2985 32.657 21.0454 32.4038C20.7922 32.1506 20.65 31.8073 20.65 31.4492V23.3492H12.55C12.1919 23.3492 11.8485 23.207 11.5954 22.9538C11.3422 22.7006 11.2 22.3573 11.2 21.9992Z"
+                            fill="#545A2F"></path>
+                          <path
+                            d="M21.9999 43.5984C27.7286 43.5984 33.2226 41.3227 37.2734 37.2719C41.3242 33.2212 43.5999 27.7271 43.5999 21.9984C43.5999 16.2698 41.3242 10.7757 37.2734 6.72493C33.2226 2.67415 27.7286 0.398438 21.9999 0.398438C16.2712 0.398438 10.7772 2.67415 6.7264 6.72493C2.67561 10.7757 0.399902 16.2698 0.399902 21.9984C0.399902 27.7271 2.67561 33.2212 6.7264 37.2719C10.7772 41.3227 16.2712 43.5984 21.9999 43.5984ZM21.9999 40.8984C19.5179 40.8984 17.0602 40.4096 14.7672 39.4598C12.4741 38.5099 10.3906 37.1178 8.63558 35.3628C6.88056 33.6077 5.48839 31.5242 4.53858 29.2312C3.58877 26.9381 3.0999 24.4804 3.0999 21.9984C3.0999 19.5165 3.58877 17.0588 4.53858 14.7657C5.48839 12.4727 6.88056 10.3891 8.63558 8.63412C10.3906 6.87909 12.4741 5.48693 14.7672 4.53711C17.0602 3.5873 19.5179 3.09844 21.9999 3.09844C27.0125 3.09844 31.8198 5.08968 35.3642 8.63412C38.9087 12.1786 40.8999 16.9858 40.8999 21.9984C40.8999 27.011 38.9087 31.8183 35.3642 35.3628C31.8198 38.9072 27.0125 40.8984 21.9999 40.8984Z"
+                            fill="#545A2F"></path>
+                        </g>
                       </g>
-                      <g class="nc-int-icon-b">
-                        <path
-                          d="M11.2 21.9992C11.2 21.6412 11.3422 21.2978 11.5954 21.0446C11.8485 20.7915 12.1919 20.6492 12.55 20.6492H20.65V12.5492C20.65 12.1912 20.7922 11.8478 21.0454 11.5946C21.2985 11.3415 21.6419 11.1992 22 11.1992C22.358 11.1992 22.7014 11.3415 22.9545 11.5946C23.2077 11.8478 23.35 12.1912 23.35 12.5492V20.6492H31.4499C31.808 20.6492 32.1514 20.7915 32.4045 21.0446C32.6577 21.2978 32.7999 21.6412 32.7999 21.9992C32.7999 22.3573 32.6577 22.7006 32.4045 22.9538C32.1514 23.207 31.808 23.3492 31.4499 23.3492H23.35V31.4492C23.35 31.8073 23.2077 32.1506 22.9545 32.4038C22.7014 32.657 22.358 32.7992 22 32.7992C21.6419 32.7992 21.2985 32.657 21.0454 32.4038C20.7922 32.1506 20.65 31.8073 20.65 31.4492V23.3492H12.55C12.1919 23.3492 11.8485 23.207 11.5954 22.9538C11.3422 22.7006 11.2 22.3573 11.2 21.9992Z"
-                          fill="#545A2F"></path>
-                        <path
-                          d="M21.9999 43.5984C27.7286 43.5984 33.2226 41.3227 37.2734 37.2719C41.3242 33.2212 43.5999 27.7271 43.5999 21.9984C43.5999 16.2698 41.3242 10.7757 37.2734 6.72493C33.2226 2.67415 27.7286 0.398438 21.9999 0.398438C16.2712 0.398438 10.7772 2.67415 6.7264 6.72493C2.67561 10.7757 0.399902 16.2698 0.399902 21.9984C0.399902 27.7271 2.67561 33.2212 6.7264 37.2719C10.7772 41.3227 16.2712 43.5984 21.9999 43.5984ZM21.9999 40.8984C19.5179 40.8984 17.0602 40.4096 14.7672 39.4598C12.4741 38.5099 10.3906 37.1178 8.63558 35.3628C6.88056 33.6077 5.48839 31.5242 4.53858 29.2312C3.58877 26.9381 3.0999 24.4804 3.0999 21.9984C3.0999 19.5165 3.58877 17.0588 4.53858 14.7657C5.48839 12.4727 6.88056 10.3891 8.63558 8.63412C10.3906 6.87909 12.4741 5.48693 14.7672 4.53711C17.0602 3.5873 19.5179 3.09844 21.9999 3.09844C27.0125 3.09844 31.8198 5.08968 35.3642 8.63412C38.9087 12.1786 40.8999 16.9858 40.8999 21.9984C40.8999 27.011 38.9087 31.8183 35.3642 35.3628C31.8198 38.9072 27.0125 40.8984 21.9999 40.8984Z"
-                          fill="#545A2F"></path>
+                    </svg></span>
+                </label>
+                <input type="radio" name="accordeon" class="questions__input" id="first">
+                <div class="questions__text-holder">
+                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex e</p>
+                </div>
+              </li>
+              <li class="questions__question">
+                <label for="second" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit?<span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                      height="48" width="48">
+                      <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
+                        <g class="nc-int-icon-a">
+                          <path
+                            d="M24 0.855469C36.7807 0.855469 47.1429 11.2177 47.1429 23.9983C47.1429 36.779 36.7807 47.1412 24 47.1412C11.2194 47.1412 0.857178 36.779 0.857178 23.9983C0.857178 11.2177 11.2194 0.855469 24 0.855469Z"
+                            fill="#545A2F"></path>
+                          <line x1="14.25" y1="22.75" x2="33.75" y2="22.75" stroke="white" stroke-width="2.5"
+                            stroke-linecap="round"></line>
+                        </g>
+                        <g class="nc-int-icon-b">
+                          <path
+                            d="M11.2 21.9992C11.2 21.6412 11.3422 21.2978 11.5954 21.0446C11.8485 20.7915 12.1919 20.6492 12.55 20.6492H20.65V12.5492C20.65 12.1912 20.7922 11.8478 21.0454 11.5946C21.2985 11.3415 21.6419 11.1992 22 11.1992C22.358 11.1992 22.7014 11.3415 22.9545 11.5946C23.2077 11.8478 23.35 12.1912 23.35 12.5492V20.6492H31.4499C31.808 20.6492 32.1514 20.7915 32.4045 21.0446C32.6577 21.2978 32.7999 21.6412 32.7999 21.9992C32.7999 22.3573 32.6577 22.7006 32.4045 22.9538C32.1514 23.207 31.808 23.3492 31.4499 23.3492H23.35V31.4492C23.35 31.8073 23.2077 32.1506 22.9545 32.4038C22.7014 32.657 22.358 32.7992 22 32.7992C21.6419 32.7992 21.2985 32.657 21.0454 32.4038C20.7922 32.1506 20.65 31.8073 20.65 31.4492V23.3492H12.55C12.1919 23.3492 11.8485 23.207 11.5954 22.9538C11.3422 22.7006 11.2 22.3573 11.2 21.9992Z"
+                            fill="#545A2F"></path>
+                          <path
+                            d="M21.9999 43.5984C27.7286 43.5984 33.2226 41.3227 37.2734 37.2719C41.3242 33.2212 43.5999 27.7271 43.5999 21.9984C43.5999 16.2698 41.3242 10.7757 37.2734 6.72493C33.2226 2.67415 27.7286 0.398438 21.9999 0.398438C16.2712 0.398438 10.7772 2.67415 6.7264 6.72493C2.67561 10.7757 0.399902 16.2698 0.399902 21.9984C0.399902 27.7271 2.67561 33.2212 6.7264 37.2719C10.7772 41.3227 16.2712 43.5984 21.9999 43.5984ZM21.9999 40.8984C19.5179 40.8984 17.0602 40.4096 14.7672 39.4598C12.4741 38.5099 10.3906 37.1178 8.63558 35.3628C6.88056 33.6077 5.48839 31.5242 4.53858 29.2312C3.58877 26.9381 3.0999 24.4804 3.0999 21.9984C3.0999 19.5165 3.58877 17.0588 4.53858 14.7657C5.48839 12.4727 6.88056 10.3891 8.63558 8.63412C10.3906 6.87909 12.4741 5.48693 14.7672 4.53711C17.0602 3.5873 19.5179 3.09844 21.9999 3.09844C27.0125 3.09844 31.8198 5.08968 35.3642 8.63412C38.9087 12.1786 40.8999 16.9858 40.8999 21.9984C40.8999 27.011 38.9087 31.8183 35.3642 35.3628C31.8198 38.9072 27.0125 40.8984 21.9999 40.8984Z"
+                            fill="#545A2F"></path>
+                        </g>
                       </g>
-                    </g>
-                  </svg></span>
-              </label>
-              <input type="radio" name="accordeon" class="questions__input" id="first">
-              <div class="questions__text-holder">
-                <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex e</p>
-              </div>
-            </li>
-            <li class="questions__question">
-              <label for="second" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit?<span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
-                    height="48" width="48">
-                    <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
-                      <g class="nc-int-icon-a">
-                        <path
-                          d="M24 0.855469C36.7807 0.855469 47.1429 11.2177 47.1429 23.9983C47.1429 36.779 36.7807 47.1412 24 47.1412C11.2194 47.1412 0.857178 36.779 0.857178 23.9983C0.857178 11.2177 11.2194 0.855469 24 0.855469Z"
-                          fill="#545A2F"></path>
-                        <line x1="14.25" y1="22.75" x2="33.75" y2="22.75" stroke="white" stroke-width="2.5"
-                          stroke-linecap="round"></line>
+                    </svg></span></label>
+                <input type="radio" name="accordeon" class="questions__input" id="second">
+                <div class="questions__text-holder">
+                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex e</p>
+                </div>
+              </li>
+              <li class="questions__question">
+                <label for="third" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit? <span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                      height="48" width="48">
+                      <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
+                        <g class="nc-int-icon-a">
+                          <path
+                            d="M24 0.855469C36.7807 0.855469 47.1429 11.2177 47.1429 23.9983C47.1429 36.779 36.7807 47.1412 24 47.1412C11.2194 47.1412 0.857178 36.779 0.857178 23.9983C0.857178 11.2177 11.2194 0.855469 24 0.855469Z"
+                            fill="#545A2F"></path>
+                          <line x1="14.25" y1="22.75" x2="33.75" y2="22.75" stroke="white" stroke-width="2.5"
+                            stroke-linecap="round"></line>
+                        </g>
+                        <g class="nc-int-icon-b">
+                          <path
+                            d="M11.2 21.9992C11.2 21.6412 11.3422 21.2978 11.5954 21.0446C11.8485 20.7915 12.1919 20.6492 12.55 20.6492H20.65V12.5492C20.65 12.1912 20.7922 11.8478 21.0454 11.5946C21.2985 11.3415 21.6419 11.1992 22 11.1992C22.358 11.1992 22.7014 11.3415 22.9545 11.5946C23.2077 11.8478 23.35 12.1912 23.35 12.5492V20.6492H31.4499C31.808 20.6492 32.1514 20.7915 32.4045 21.0446C32.6577 21.2978 32.7999 21.6412 32.7999 21.9992C32.7999 22.3573 32.6577 22.7006 32.4045 22.9538C32.1514 23.207 31.808 23.3492 31.4499 23.3492H23.35V31.4492C23.35 31.8073 23.2077 32.1506 22.9545 32.4038C22.7014 32.657 22.358 32.7992 22 32.7992C21.6419 32.7992 21.2985 32.657 21.0454 32.4038C20.7922 32.1506 20.65 31.8073 20.65 31.4492V23.3492H12.55C12.1919 23.3492 11.8485 23.207 11.5954 22.9538C11.3422 22.7006 11.2 22.3573 11.2 21.9992Z"
+                            fill="#545A2F"></path>
+                          <path
+                            d="M21.9999 43.5984C27.7286 43.5984 33.2226 41.3227 37.2734 37.2719C41.3242 33.2212 43.5999 27.7271 43.5999 21.9984C43.5999 16.2698 41.3242 10.7757 37.2734 6.72493C33.2226 2.67415 27.7286 0.398438 21.9999 0.398438C16.2712 0.398438 10.7772 2.67415 6.7264 6.72493C2.67561 10.7757 0.399902 16.2698 0.399902 21.9984C0.399902 27.7271 2.67561 33.2212 6.7264 37.2719C10.7772 41.3227 16.2712 43.5984 21.9999 43.5984ZM21.9999 40.8984C19.5179 40.8984 17.0602 40.4096 14.7672 39.4598C12.4741 38.5099 10.3906 37.1178 8.63558 35.3628C6.88056 33.6077 5.48839 31.5242 4.53858 29.2312C3.58877 26.9381 3.0999 24.4804 3.0999 21.9984C3.0999 19.5165 3.58877 17.0588 4.53858 14.7657C5.48839 12.4727 6.88056 10.3891 8.63558 8.63412C10.3906 6.87909 12.4741 5.48693 14.7672 4.53711C17.0602 3.5873 19.5179 3.09844 21.9999 3.09844C27.0125 3.09844 31.8198 5.08968 35.3642 8.63412C38.9087 12.1786 40.8999 16.9858 40.8999 21.9984C40.8999 27.011 38.9087 31.8183 35.3642 35.3628C31.8198 38.9072 27.0125 40.8984 21.9999 40.8984Z"
+                            fill="#545A2F"></path>
+                        </g>
                       </g>
-                      <g class="nc-int-icon-b">
-                        <path
-                          d="M11.2 21.9992C11.2 21.6412 11.3422 21.2978 11.5954 21.0446C11.8485 20.7915 12.1919 20.6492 12.55 20.6492H20.65V12.5492C20.65 12.1912 20.7922 11.8478 21.0454 11.5946C21.2985 11.3415 21.6419 11.1992 22 11.1992C22.358 11.1992 22.7014 11.3415 22.9545 11.5946C23.2077 11.8478 23.35 12.1912 23.35 12.5492V20.6492H31.4499C31.808 20.6492 32.1514 20.7915 32.4045 21.0446C32.6577 21.2978 32.7999 21.6412 32.7999 21.9992C32.7999 22.3573 32.6577 22.7006 32.4045 22.9538C32.1514 23.207 31.808 23.3492 31.4499 23.3492H23.35V31.4492C23.35 31.8073 23.2077 32.1506 22.9545 32.4038C22.7014 32.657 22.358 32.7992 22 32.7992C21.6419 32.7992 21.2985 32.657 21.0454 32.4038C20.7922 32.1506 20.65 31.8073 20.65 31.4492V23.3492H12.55C12.1919 23.3492 11.8485 23.207 11.5954 22.9538C11.3422 22.7006 11.2 22.3573 11.2 21.9992Z"
-                          fill="#545A2F"></path>
-                        <path
-                          d="M21.9999 43.5984C27.7286 43.5984 33.2226 41.3227 37.2734 37.2719C41.3242 33.2212 43.5999 27.7271 43.5999 21.9984C43.5999 16.2698 41.3242 10.7757 37.2734 6.72493C33.2226 2.67415 27.7286 0.398438 21.9999 0.398438C16.2712 0.398438 10.7772 2.67415 6.7264 6.72493C2.67561 10.7757 0.399902 16.2698 0.399902 21.9984C0.399902 27.7271 2.67561 33.2212 6.7264 37.2719C10.7772 41.3227 16.2712 43.5984 21.9999 43.5984ZM21.9999 40.8984C19.5179 40.8984 17.0602 40.4096 14.7672 39.4598C12.4741 38.5099 10.3906 37.1178 8.63558 35.3628C6.88056 33.6077 5.48839 31.5242 4.53858 29.2312C3.58877 26.9381 3.0999 24.4804 3.0999 21.9984C3.0999 19.5165 3.58877 17.0588 4.53858 14.7657C5.48839 12.4727 6.88056 10.3891 8.63558 8.63412C10.3906 6.87909 12.4741 5.48693 14.7672 4.53711C17.0602 3.5873 19.5179 3.09844 21.9999 3.09844C27.0125 3.09844 31.8198 5.08968 35.3642 8.63412C38.9087 12.1786 40.8999 16.9858 40.8999 21.9984C40.8999 27.011 38.9087 31.8183 35.3642 35.3628C31.8198 38.9072 27.0125 40.8984 21.9999 40.8984Z"
-                          fill="#545A2F"></path>
+                    </svg></span></label>
+                <input type="radio" name="accordeon" class="questions__input" id="third">
+                <div class="questions__text-holder">
+                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex e</p>
+                </div>
+              </li>
+              <li class="questions__question">
+                <label for="fourth" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit? <span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                      height="48" width="48">
+                      <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
+                        <g class="nc-int-icon-a">
+                          <path
+                            d="M24 0.855469C36.7807 0.855469 47.1429 11.2177 47.1429 23.9983C47.1429 36.779 36.7807 47.1412 24 47.1412C11.2194 47.1412 0.857178 36.779 0.857178 23.9983C0.857178 11.2177 11.2194 0.855469 24 0.855469Z"
+                            fill="#545A2F"></path>
+                          <line x1="14.25" y1="22.75" x2="33.75" y2="22.75" stroke="white" stroke-width="2.5"
+                            stroke-linecap="round"></line>
+                        </g>
+                        <g class="nc-int-icon-b">
+                          <path
+                            d="M11.2 21.9992C11.2 21.6412 11.3422 21.2978 11.5954 21.0446C11.8485 20.7915 12.1919 20.6492 12.55 20.6492H20.65V12.5492C20.65 12.1912 20.7922 11.8478 21.0454 11.5946C21.2985 11.3415 21.6419 11.1992 22 11.1992C22.358 11.1992 22.7014 11.3415 22.9545 11.5946C23.2077 11.8478 23.35 12.1912 23.35 12.5492V20.6492H31.4499C31.808 20.6492 32.1514 20.7915 32.4045 21.0446C32.6577 21.2978 32.7999 21.6412 32.7999 21.9992C32.7999 22.3573 32.6577 22.7006 32.4045 22.9538C32.1514 23.207 31.808 23.3492 31.4499 23.3492H23.35V31.4492C23.35 31.8073 23.2077 32.1506 22.9545 32.4038C22.7014 32.657 22.358 32.7992 22 32.7992C21.6419 32.7992 21.2985 32.657 21.0454 32.4038C20.7922 32.1506 20.65 31.8073 20.65 31.4492V23.3492H12.55C12.1919 23.3492 11.8485 23.207 11.5954 22.9538C11.3422 22.7006 11.2 22.3573 11.2 21.9992Z"
+                            fill="#545A2F"></path>
+                          <path
+                            d="M21.9999 43.5984C27.7286 43.5984 33.2226 41.3227 37.2734 37.2719C41.3242 33.2212 43.5999 27.7271 43.5999 21.9984C43.5999 16.2698 41.3242 10.7757 37.2734 6.72493C33.2226 2.67415 27.7286 0.398438 21.9999 0.398438C16.2712 0.398438 10.7772 2.67415 6.7264 6.72493C2.67561 10.7757 0.399902 16.2698 0.399902 21.9984C0.399902 27.7271 2.67561 33.2212 6.7264 37.2719C10.7772 41.3227 16.2712 43.5984 21.9999 43.5984ZM21.9999 40.8984C19.5179 40.8984 17.0602 40.4096 14.7672 39.4598C12.4741 38.5099 10.3906 37.1178 8.63558 35.3628C6.88056 33.6077 5.48839 31.5242 4.53858 29.2312C3.58877 26.9381 3.0999 24.4804 3.0999 21.9984C3.0999 19.5165 3.58877 17.0588 4.53858 14.7657C5.48839 12.4727 6.88056 10.3891 8.63558 8.63412C10.3906 6.87909 12.4741 5.48693 14.7672 4.53711C17.0602 3.5873 19.5179 3.09844 21.9999 3.09844C27.0125 3.09844 31.8198 5.08968 35.3642 8.63412C38.9087 12.1786 40.8999 16.9858 40.8999 21.9984C40.8999 27.011 38.9087 31.8183 35.3642 35.3628C31.8198 38.9072 27.0125 40.8984 21.9999 40.8984Z"
+                            fill="#545A2F"></path>
+                        </g>
                       </g>
-                    </g>
-                  </svg></span></label>
-              <input type="radio" name="accordeon" class="questions__input" id="second" checked>
-              <div class="questions__text-holder">
-                <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex e</p>
-              </div>
-            </li>
-            <li class="questions__question">
-              <label for="third" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit? <span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
-                    height="48" width="48">
-                    <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
-                      <g class="nc-int-icon-a">
-                        <path
-                          d="M24 0.855469C36.7807 0.855469 47.1429 11.2177 47.1429 23.9983C47.1429 36.779 36.7807 47.1412 24 47.1412C11.2194 47.1412 0.857178 36.779 0.857178 23.9983C0.857178 11.2177 11.2194 0.855469 24 0.855469Z"
-                          fill="#545A2F"></path>
-                        <line x1="14.25" y1="22.75" x2="33.75" y2="22.75" stroke="white" stroke-width="2.5"
-                          stroke-linecap="round"></line>
+                    </svg></span></label>
+                <input type="radio" name="accordeon" class="questions__input" id="fourth">
+                <div class="questions__text-holder">
+                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex e</p>
+                </div>
+              </li>
+              <li class="questions__question">
+                <label for="fifth" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit? <span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                      height="48" width="48">
+                      <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
+                        <g class="nc-int-icon-a">
+                          <path
+                            d="M24 0.855469C36.7807 0.855469 47.1429 11.2177 47.1429 23.9983C47.1429 36.779 36.7807 47.1412 24 47.1412C11.2194 47.1412 0.857178 36.779 0.857178 23.9983C0.857178 11.2177 11.2194 0.855469 24 0.855469Z"
+                            fill="#545A2F"></path>
+                          <line x1="14.25" y1="22.75" x2="33.75" y2="22.75" stroke="white" stroke-width="2.5"
+                            stroke-linecap="round"></line>
+                        </g>
+                        <g class="nc-int-icon-b">
+                          <path
+                            d="M11.2 21.9992C11.2 21.6412 11.3422 21.2978 11.5954 21.0446C11.8485 20.7915 12.1919 20.6492 12.55 20.6492H20.65V12.5492C20.65 12.1912 20.7922 11.8478 21.0454 11.5946C21.2985 11.3415 21.6419 11.1992 22 11.1992C22.358 11.1992 22.7014 11.3415 22.9545 11.5946C23.2077 11.8478 23.35 12.1912 23.35 12.5492V20.6492H31.4499C31.808 20.6492 32.1514 20.7915 32.4045 21.0446C32.6577 21.2978 32.7999 21.6412 32.7999 21.9992C32.7999 22.3573 32.6577 22.7006 32.4045 22.9538C32.1514 23.207 31.808 23.3492 31.4499 23.3492H23.35V31.4492C23.35 31.8073 23.2077 32.1506 22.9545 32.4038C22.7014 32.657 22.358 32.7992 22 32.7992C21.6419 32.7992 21.2985 32.657 21.0454 32.4038C20.7922 32.1506 20.65 31.8073 20.65 31.4492V23.3492H12.55C12.1919 23.3492 11.8485 23.207 11.5954 22.9538C11.3422 22.7006 11.2 22.3573 11.2 21.9992Z"
+                            fill="#545A2F"></path>
+                          <path
+                            d="M21.9999 43.5984C27.7286 43.5984 33.2226 41.3227 37.2734 37.2719C41.3242 33.2212 43.5999 27.7271 43.5999 21.9984C43.5999 16.2698 41.3242 10.7757 37.2734 6.72493C33.2226 2.67415 27.7286 0.398438 21.9999 0.398438C16.2712 0.398438 10.7772 2.67415 6.7264 6.72493C2.67561 10.7757 0.399902 16.2698 0.399902 21.9984C0.399902 27.7271 2.67561 33.2212 6.7264 37.2719C10.7772 41.3227 16.2712 43.5984 21.9999 43.5984ZM21.9999 40.8984C19.5179 40.8984 17.0602 40.4096 14.7672 39.4598C12.4741 38.5099 10.3906 37.1178 8.63558 35.3628C6.88056 33.6077 5.48839 31.5242 4.53858 29.2312C3.58877 26.9381 3.0999 24.4804 3.0999 21.9984C3.0999 19.5165 3.58877 17.0588 4.53858 14.7657C5.48839 12.4727 6.88056 10.3891 8.63558 8.63412C10.3906 6.87909 12.4741 5.48693 14.7672 4.53711C17.0602 3.5873 19.5179 3.09844 21.9999 3.09844C27.0125 3.09844 31.8198 5.08968 35.3642 8.63412C38.9087 12.1786 40.8999 16.9858 40.8999 21.9984C40.8999 27.011 38.9087 31.8183 35.3642 35.3628C31.8198 38.9072 27.0125 40.8984 21.9999 40.8984Z"
+                            fill="#545A2F"></path>
+                        </g>
                       </g>
-                      <g class="nc-int-icon-b">
-                        <path
-                          d="M11.2 21.9992C11.2 21.6412 11.3422 21.2978 11.5954 21.0446C11.8485 20.7915 12.1919 20.6492 12.55 20.6492H20.65V12.5492C20.65 12.1912 20.7922 11.8478 21.0454 11.5946C21.2985 11.3415 21.6419 11.1992 22 11.1992C22.358 11.1992 22.7014 11.3415 22.9545 11.5946C23.2077 11.8478 23.35 12.1912 23.35 12.5492V20.6492H31.4499C31.808 20.6492 32.1514 20.7915 32.4045 21.0446C32.6577 21.2978 32.7999 21.6412 32.7999 21.9992C32.7999 22.3573 32.6577 22.7006 32.4045 22.9538C32.1514 23.207 31.808 23.3492 31.4499 23.3492H23.35V31.4492C23.35 31.8073 23.2077 32.1506 22.9545 32.4038C22.7014 32.657 22.358 32.7992 22 32.7992C21.6419 32.7992 21.2985 32.657 21.0454 32.4038C20.7922 32.1506 20.65 31.8073 20.65 31.4492V23.3492H12.55C12.1919 23.3492 11.8485 23.207 11.5954 22.9538C11.3422 22.7006 11.2 22.3573 11.2 21.9992Z"
-                          fill="#545A2F"></path>
-                        <path
-                          d="M21.9999 43.5984C27.7286 43.5984 33.2226 41.3227 37.2734 37.2719C41.3242 33.2212 43.5999 27.7271 43.5999 21.9984C43.5999 16.2698 41.3242 10.7757 37.2734 6.72493C33.2226 2.67415 27.7286 0.398438 21.9999 0.398438C16.2712 0.398438 10.7772 2.67415 6.7264 6.72493C2.67561 10.7757 0.399902 16.2698 0.399902 21.9984C0.399902 27.7271 2.67561 33.2212 6.7264 37.2719C10.7772 41.3227 16.2712 43.5984 21.9999 43.5984ZM21.9999 40.8984C19.5179 40.8984 17.0602 40.4096 14.7672 39.4598C12.4741 38.5099 10.3906 37.1178 8.63558 35.3628C6.88056 33.6077 5.48839 31.5242 4.53858 29.2312C3.58877 26.9381 3.0999 24.4804 3.0999 21.9984C3.0999 19.5165 3.58877 17.0588 4.53858 14.7657C5.48839 12.4727 6.88056 10.3891 8.63558 8.63412C10.3906 6.87909 12.4741 5.48693 14.7672 4.53711C17.0602 3.5873 19.5179 3.09844 21.9999 3.09844C27.0125 3.09844 31.8198 5.08968 35.3642 8.63412C38.9087 12.1786 40.8999 16.9858 40.8999 21.9984C40.8999 27.011 38.9087 31.8183 35.3642 35.3628C31.8198 38.9072 27.0125 40.8984 21.9999 40.8984Z"
-                          fill="#545A2F"></path>
-                      </g>
-                    </g>
-                  </svg></span></label>
-              <input type="radio" name="accordeon" class="questions__input" id="third">
-              <div class="questions__text-holder">
-                <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex e</p>
-              </div>
-            </li>
-            <li class="questions__question">
-              <label for="fourth" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit? <span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
-                    height="48" width="48">
-                    <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
-                      <g class="nc-int-icon-a">
-                        <path
-                          d="M24 0.855469C36.7807 0.855469 47.1429 11.2177 47.1429 23.9983C47.1429 36.779 36.7807 47.1412 24 47.1412C11.2194 47.1412 0.857178 36.779 0.857178 23.9983C0.857178 11.2177 11.2194 0.855469 24 0.855469Z"
-                          fill="#545A2F"></path>
-                        <line x1="14.25" y1="22.75" x2="33.75" y2="22.75" stroke="white" stroke-width="2.5"
-                          stroke-linecap="round"></line>
-                      </g>
-                      <g class="nc-int-icon-b">
-                        <path
-                          d="M11.2 21.9992C11.2 21.6412 11.3422 21.2978 11.5954 21.0446C11.8485 20.7915 12.1919 20.6492 12.55 20.6492H20.65V12.5492C20.65 12.1912 20.7922 11.8478 21.0454 11.5946C21.2985 11.3415 21.6419 11.1992 22 11.1992C22.358 11.1992 22.7014 11.3415 22.9545 11.5946C23.2077 11.8478 23.35 12.1912 23.35 12.5492V20.6492H31.4499C31.808 20.6492 32.1514 20.7915 32.4045 21.0446C32.6577 21.2978 32.7999 21.6412 32.7999 21.9992C32.7999 22.3573 32.6577 22.7006 32.4045 22.9538C32.1514 23.207 31.808 23.3492 31.4499 23.3492H23.35V31.4492C23.35 31.8073 23.2077 32.1506 22.9545 32.4038C22.7014 32.657 22.358 32.7992 22 32.7992C21.6419 32.7992 21.2985 32.657 21.0454 32.4038C20.7922 32.1506 20.65 31.8073 20.65 31.4492V23.3492H12.55C12.1919 23.3492 11.8485 23.207 11.5954 22.9538C11.3422 22.7006 11.2 22.3573 11.2 21.9992Z"
-                          fill="#545A2F"></path>
-                        <path
-                          d="M21.9999 43.5984C27.7286 43.5984 33.2226 41.3227 37.2734 37.2719C41.3242 33.2212 43.5999 27.7271 43.5999 21.9984C43.5999 16.2698 41.3242 10.7757 37.2734 6.72493C33.2226 2.67415 27.7286 0.398438 21.9999 0.398438C16.2712 0.398438 10.7772 2.67415 6.7264 6.72493C2.67561 10.7757 0.399902 16.2698 0.399902 21.9984C0.399902 27.7271 2.67561 33.2212 6.7264 37.2719C10.7772 41.3227 16.2712 43.5984 21.9999 43.5984ZM21.9999 40.8984C19.5179 40.8984 17.0602 40.4096 14.7672 39.4598C12.4741 38.5099 10.3906 37.1178 8.63558 35.3628C6.88056 33.6077 5.48839 31.5242 4.53858 29.2312C3.58877 26.9381 3.0999 24.4804 3.0999 21.9984C3.0999 19.5165 3.58877 17.0588 4.53858 14.7657C5.48839 12.4727 6.88056 10.3891 8.63558 8.63412C10.3906 6.87909 12.4741 5.48693 14.7672 4.53711C17.0602 3.5873 19.5179 3.09844 21.9999 3.09844C27.0125 3.09844 31.8198 5.08968 35.3642 8.63412C38.9087 12.1786 40.8999 16.9858 40.8999 21.9984C40.8999 27.011 38.9087 31.8183 35.3642 35.3628C31.8198 38.9072 27.0125 40.8984 21.9999 40.8984Z"
-                          fill="#545A2F"></path>
-                      </g>
-                    </g>
-                  </svg></span></label>
-              <input type="radio" name="accordeon" class="questions__input" id="fourth">
-              <div class="questions__text-holder">
-                <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex e</p>
-              </div>
-            </li>
-            <li class="questions__question">
-              <label for="fifth" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit? <span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
-                    height="48" width="48">
-                    <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
-                      <g class="nc-int-icon-a">
-                        <path
-                          d="M24 0.855469C36.7807 0.855469 47.1429 11.2177 47.1429 23.9983C47.1429 36.779 36.7807 47.1412 24 47.1412C11.2194 47.1412 0.857178 36.779 0.857178 23.9983C0.857178 11.2177 11.2194 0.855469 24 0.855469Z"
-                          fill="#545A2F"></path>
-                        <line x1="14.25" y1="22.75" x2="33.75" y2="22.75" stroke="white" stroke-width="2.5"
-                          stroke-linecap="round"></line>
-                      </g>
-                      <g class="nc-int-icon-b">
-                        <path
-                          d="M11.2 21.9992C11.2 21.6412 11.3422 21.2978 11.5954 21.0446C11.8485 20.7915 12.1919 20.6492 12.55 20.6492H20.65V12.5492C20.65 12.1912 20.7922 11.8478 21.0454 11.5946C21.2985 11.3415 21.6419 11.1992 22 11.1992C22.358 11.1992 22.7014 11.3415 22.9545 11.5946C23.2077 11.8478 23.35 12.1912 23.35 12.5492V20.6492H31.4499C31.808 20.6492 32.1514 20.7915 32.4045 21.0446C32.6577 21.2978 32.7999 21.6412 32.7999 21.9992C32.7999 22.3573 32.6577 22.7006 32.4045 22.9538C32.1514 23.207 31.808 23.3492 31.4499 23.3492H23.35V31.4492C23.35 31.8073 23.2077 32.1506 22.9545 32.4038C22.7014 32.657 22.358 32.7992 22 32.7992C21.6419 32.7992 21.2985 32.657 21.0454 32.4038C20.7922 32.1506 20.65 31.8073 20.65 31.4492V23.3492H12.55C12.1919 23.3492 11.8485 23.207 11.5954 22.9538C11.3422 22.7006 11.2 22.3573 11.2 21.9992Z"
-                          fill="#545A2F"></path>
-                        <path
-                          d="M21.9999 43.5984C27.7286 43.5984 33.2226 41.3227 37.2734 37.2719C41.3242 33.2212 43.5999 27.7271 43.5999 21.9984C43.5999 16.2698 41.3242 10.7757 37.2734 6.72493C33.2226 2.67415 27.7286 0.398438 21.9999 0.398438C16.2712 0.398438 10.7772 2.67415 6.7264 6.72493C2.67561 10.7757 0.399902 16.2698 0.399902 21.9984C0.399902 27.7271 2.67561 33.2212 6.7264 37.2719C10.7772 41.3227 16.2712 43.5984 21.9999 43.5984ZM21.9999 40.8984C19.5179 40.8984 17.0602 40.4096 14.7672 39.4598C12.4741 38.5099 10.3906 37.1178 8.63558 35.3628C6.88056 33.6077 5.48839 31.5242 4.53858 29.2312C3.58877 26.9381 3.0999 24.4804 3.0999 21.9984C3.0999 19.5165 3.58877 17.0588 4.53858 14.7657C5.48839 12.4727 6.88056 10.3891 8.63558 8.63412C10.3906 6.87909 12.4741 5.48693 14.7672 4.53711C17.0602 3.5873 19.5179 3.09844 21.9999 3.09844C27.0125 3.09844 31.8198 5.08968 35.3642 8.63412C38.9087 12.1786 40.8999 16.9858 40.8999 21.9984C40.8999 27.011 38.9087 31.8183 35.3642 35.3628C31.8198 38.9072 27.0125 40.8984 21.9999 40.8984Z"
-                          fill="#545A2F"></path>
-                      </g>
-                    </g>
-                  </svg></span></label>
-              <input type="radio" name="accordeon" class="questions__input" id="fifth">
-              <div class="questions__text-holder">
-                <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex e</p>
-              </div>
-            </li>
-          </ul>
+                    </svg></span></label>
+                <input type="radio" name="accordeon" class="questions__input" id="fifth" checked>
+                <div class="questions__text-holder">
+                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex e</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="get-instruction get-instruction--small">
-        <div class="get-instruction__titleholder">
-          <h2 class="title">
-            Как выбрать растения<br />
-            для сада?
-          </h2>
-        </div>
-        <div class="get-instruction__imageholder">
-          <img src="assets/images/instruction__image.png" alt="" class="get-instruction__image" />
-        </div>
-        <div class="get-instruction__interactions">
+        <div class="get-instruction get-instruction--small">
+          <div class="get-instruction__titleholder">
+            <h2 class="title">
+              Как выбрать растения<br />
+              для сада?
+            </h2>
+          </div>
           <div class="get-instruction__textholder">
             <p class="get-instruction__text">Пришлем инструкцию!</p>
           </div>
-          <form action="" class="get-instruction__inputholder">
-            <input class="get-instruction__input" type="text" id="email" name="email" value="Ваш Email">
-          </form>
-          <form action="" class="get-instruction_checkboxholder">
-            <input type="checkbox" id="consent" name="consent" value="consent">
-            <label for="consent" class="get-instruction__label">Я даю согласие на обработку своих персональных
-              данных</label>
-          </form>
-          <button class="button">Хочу инструкцию</button>
+          <div class="get-instruction__imageholder">
+            <img src="assets/images/get-instructions__image--small1.png" alt="" class="get-instruction__image" />
+          </div>
+          <div class="get-instruction__interactions">
+            <form action="" class="get-instruction__inputholder">
+              <input class="get-instruction__input" type="text" id="email" name="email" value="Ваш Email">
+            </form>
+            <form action="" class="get-instruction_checkboxholder">
+              <input type="checkbox" id="consent" name="consent" value="consent">
+              <label for="consent" class="get-instruction__label">Я даю согласие на обработку своих персональных
+                данных</label>
+            </form>
+            <button class="button">Хочу инструкцию</button>
+          </div>
         </div>
       </div>
-      <div class="get-instruction"></div>
     </section>
     <!--Алиса-->
     <!--Переиспользуем button, button button--round-->
@@ -554,21 +580,24 @@
       </div>
       <img class="arrow-vector" src="./assets/images/arrow-vector.svg" alt="arrow-vector" />
       <button class="button">Перезвоните мне</button>
-      <button class="button button--round button--color">Наверх</button>
+      <button class="button button--shape button--medium">
+        <img src="assets/images/arrow-up.svg" alt="" class="arrow-up">
+        <p>Наверх</p>
+      </button>
     </section>
   </main>
   <!--Алиса-->
   <!--Переиспользуем whole-logo inst-logo-->
   <footer class="footer screen">
     <div>
-      <p class="footer__text">+7(921) 888 88 88</p>
-      <p class="footer__text">info@vesna.ru</p>
-      <p class="footer__text--transparent">© 2021 VESNA</p>
+      <p class="footer__number">+7(921) 888 88 88</p>
+      <p class="footer__email">info@vesna.ru</p>
+      <p class="footer__copyright">© 2021 Vesna</p>
     </div>
     <img class="whole-logo" src="./assets/images/whole-logo.svg" alt="round logo" />
-    <div class="footer--right">
-      <img src="./assets/images/insta-logo.svg" alt="insta logo" />
-      <p>Политика конфиденциальности</p>
+    <div class="footer__right">
+      <img src="./assets/images/insta-logo.svg" alt="insta logo" class="insta-logo" />
+      <p class="footer__privacy">Политика конфиденциальности</p>
     </div>
   </footer>
   <script src="src/script.js"></script>
