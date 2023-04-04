@@ -1,6 +1,6 @@
 // Our SCSS styles
 @import "fonts";
-@import "variables";
+@import "colors";
 
 //общее
 
@@ -13,16 +13,15 @@
 
 .body,
 .screen {
-    // max-width: 1920px;
-    max-width: 100vw;
+    max-width: 1920px;
 }
 
+//Re-usable blocks
+
+//button & modifiers
+
 .button {
-    font-family: "Noah";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
+    @include noah-400-24;
 
     color: $lightColor;
     background-color: $themeColor;
@@ -38,7 +37,7 @@
     height: 191px;
 }
 
-.button--light{
+.button--light {
     background-color: $lightColor;
     color: $themeColor;
 }
@@ -49,20 +48,15 @@
     color: $lightColor;
 }
 
-
-
-
-
+//title & modifiers
 .title {
-    font-family: "Noah";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 58px;
-    line-height: 72px;
+    @include noah-400-58;
+
     text-align: center;
     color: $darkColor;
 }
 
+//general styles
 //header
 
 .header {
@@ -71,7 +65,7 @@
     background-size: cover;
     background-position: center;
 
-    .header__top {
+    &__top {
         width: 100%;
         max-width: 100%;
         padding-top: 50px;
@@ -86,76 +80,58 @@
         padding-left: 110px;
     }
 
-    .header__top-right {
+    &__top-right {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-right: 100px;
     }
 
-    .header__nav {
+    &__nav {
         display: flex;
         justify-content: center;
         width: 40%;
         min-width: 40%;
     }
 
-    .header__menu {
+    &__menu {
         list-style: none;
         display: flex;
     }
 
-    .header__link {
+    &__link {
         text-decoration: none;
         padding-inline: 1rem;
         color: $lightColor;
         white-space: nowrap;
 
-        font-family: 'Geometria';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 24px;
+        @include geometria-500-24;
     }
 
-    .header__button-text {
-        font-family: 'Noah';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 25px;
+    &__button-text {
+        @include noah-700-20;
 
         text-align: center;
-
         color: $lightColor;
     }
 
-    .header__middle {
+    &__middle {
         padding-left: 290px;
         padding-top: 160px;
         padding-bottom: 230px;
     }
 
-    .header__text {
-        font-family: 'Noah';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
+    &__text {
+        @include noah-400-24;
 
         text-align: left;
-
         color: $lightColor;
     }
 
     .main-title {
-        font-family: 'Noah';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 70px;
-        line-height: 87px;
-        text-align: left;
+        @include noah-700-70;
 
+        text-align: left;
         color: $lightColor;
     }
 
@@ -171,17 +147,17 @@
 
     }
 
-    .header__bottom {
+    &__bottom {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .header__project-image {
+    &__project-image {
         padding-left: 290px;
     }
 
-    .header__bottom-right {
+    &__bottom-right {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -190,7 +166,7 @@
         padding-right: 290px;
     }
 
-    .header__arrows {
+    &__arrows {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -198,53 +174,45 @@
     }
 }
 
-//стили для блока place 
+//place 
 
 .place {
-    .place__container {
+    &__container {
         padding-top: 211px;
 
         display: flex;
         justify-content: center;
-
-        .place__description-holder {
-            max-width: 1336px;
-            min-width: 1200;
-            height: 417px;
-        }
-
-        .place__text {
-            width: 856px;
-            height: 240px;
-
-            font-family: 'Noah';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 30px;
-            text-align: center;
-
-            margin-left: 259px;
-            margin-right: 221px;
-            margin-top: 53px;
-            margin-bottom: 200px;
-        }
     }
+
+    &__description-holder {
+        max-width: 1336px;
+        min-width: 1200;
+        height: 417px;
+    }
+
+    &__text {
+        width: 856px;
+        height: 240px;
+
+        @include noah-400-24;
+        text-align: center;
+
+        margin-left: 259px;
+        margin-right: 221px;
+        margin-top: 53px;
+        margin-bottom: 200px;
+    }  
 
     .description {
         margin-bottom: 53px;
 
+        @include noah-400-48;
 
-        font-family: 'Noah';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 60px;
         text-align: center;
 
     }
 
-    .place__left {
+    &__left {
         position: absolute;
         left: 0px;
         top: 1540px;
@@ -257,7 +225,7 @@
         border-radius: 0px;
     }
 
-    .place__right {
+    &__right {
         position: absolute;
         top: 1540px;
         right: 0;
@@ -265,7 +233,7 @@
     }
 
 
-    .place__garden {
+    &__garden {
         max-width: 1920px;
         height: 410px;
         margin-top: 200px;
@@ -275,28 +243,22 @@
         gap: 27px;
 
 
-        .place__img-1,
-        .place__img-2,
-        .place__img-3 {
+        &__img {
             width: 579px;
             height: 410px;
         }
     }
 }
 
-//стили для блока location screen
-
+//location
 
 .location {
 
     padding-top: 200px;
 
     .description {
-        font-family: "Noah";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 60px;
+        @include noah-400-48;
+
         text-align: center;
         margin-left: 380px;
         margin-right: 380px;
@@ -304,12 +266,12 @@
     }
 
 
-    .location__background {
+    &__background {
         display: flex;
         justify-content: center;
     }
 
-    .location__background-set {
+    &__background-set {
         height: 900px;
     }
 
@@ -323,52 +285,49 @@
         margin-bottom: 53px;
     }
 
-    .location__content {
+    &__content {
         display: flex;
         justify-content: center;
     }
 
-    .location__examples {
+    &__examples {
         width: 776px;
         height: 858px;
         margin-top: -812px;
     }
 
-    .location__examples-note {
+    &__examples-note {
         margin-left: 270px;
         margin-bottom: 14px;
         margin-top: 0px;
-        font-family: "Noah";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
+
+        @include noah-400-24;
     }
 
-    .location__examples-image1 {
+    &__examples-image1 {
         width: 701px;
         height: 526px;
         margin-left: 87px;
     }
 
-    .location__examples-image2 {
+    &__examples-image2 {
         width: 536px;
         height: 402px;
         margin-left: 327px;
         margin-top: -57px;
     }
 
-    .location__block {
+    &__block {
         margin-top: -712px;
     }
 
-    .location__block-1 {
+    &__block-1 {
         display: flex;
         margin-left: 115px;
         margin-right: 86px;
     }
 
-    .location__block-2 {
+    &__block-2 {
         display: flex;
         margin-left: 165px;
         margin-top: 156px;
@@ -376,7 +335,7 @@
         margin-right: 36px;
     }
 
-    .location__block-3 {
+    &__block-3 {
         display: flex;
         margin-left: 201px;
     }
@@ -386,79 +345,71 @@
         height: 50px;
     }
 
-    .location__block-note {
+    &__block-note {
         margin-left: 37px;
         margin-top: 0px;
-        font-family: "Noah";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
-        color: $darkColor;
+
+        @include noah-400-24;
+
         text-align: start;
+        color: $darkColor;
+
     }
 }
 
-//стили для блока services 
+//services 
 
 .services {
     margin-top: 250px;
 
-    .services__container {
+    &__container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 70px;
+    }
 
-        .services__content {
-            width: 399px;
-            height: 678px;
+    &__content {
+        width: 399px;
+        height: 678px;
 
-            position: relative;
-            margin-right: 70px;
-        }
+        position: relative;
+        margin-right: 70px;
+    }
 
-        .services__subtitle {
-            font-family: 'Noah';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 38px;
-            line-height: 47px;
-            text-align: center;
-            color: $darkColor;
-            margin-top: 80px;
-        }
+    &__subtitle {
+        margin-top: 80px;
+
+        @include noah-400-38;
+
+        text-align: center;
+        color: $darkColor;
     }
 
     .pencil-logo,
     .tree-logo,
     .fence-logo {
-        width: 81px;
-        height: 81px;
         position: absolute;
         top: 0px;
+
+        width: 81px;
+        height: 81px;
     }
 
-    .services__list {
-        font-family: 'Noah';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
+    &__list {
+        @include noah-400-24;
+    }
 
-        .services__text {
-            font-family: 'Noah';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 30px;
-            color: $darkColor;
-            margin-bottom: 20px;
-        }
+    &__text {
+        @include noah-400-24;
+
+        color: $darkColor;
+        margin-bottom: 20px;
     }
 }
 
-//стили для блока instruction
+//instruction
+
 .instruction {
     margin-top: 200px;
 
@@ -466,7 +417,8 @@
     justify-content: space-around;
     align-items: center;
 
-    .instruction__background {
+
+    &__background {
         height: 333px;
         width: 100%;
         max-width: 100vw;
@@ -476,31 +428,14 @@
         background-color: $accentColor;
     }
 
-    .instruction__imageholder {
+    &__imageholder {
         width: 50vw;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .instruction__background {
-        height: 333px;
-        width: 100%;
-        max-width: 100vw;
-        position: absolute;
-        z-index: -1;
-
-        background-color: $accentColor;
-    }
-
-    .instruction__imageholder {
-        width: 50vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .instruction__image {
+    &__image {
         width: 1309px;
     }
 }
@@ -508,13 +443,14 @@
 //блок внутри insruction
 .get-instruction {
     width: 50vw;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
     padding-bottom: 200px;
 
-    .get-instruction__interactions {
+    &__interactions {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -522,55 +458,45 @@
         height: 333px;
     }
 
-    .get-instruction__text {
-        font-family: "Noah";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
+    &__text {
+        @include noah-400-24;
 
         color: $darkColor;
     }
 
-    .get-instruction__label {
-        font-family: "Noah";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
+    &__label {
+        @include noah-400-16;
 
         color: $darkColor;
     }
 
-    .get-instruction__input {
+    &__input {
         width: 638px;
         height: 50px;
         border: none;
 
-        font-family: "Noah";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
+        @include noah-400-24;
 
         color: $themeColor;
     }
 }
 
-//стили для блока designes
+//designes
 .designes {
-    .designes__container {
+    &__container {
+        position: relative;
+
+        max-width: 1920px;
+        height: 1070px;
+        margin: 65px auto;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 1920px;
-        height: 1070px;
-        margin: 65px auto;
-        position: relative;
     }
 
-    .designes__image {
+    &__image {
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
@@ -578,7 +504,7 @@
         gap: 5px;
     }
 
-    .designes__img {
+    &__img {
         width: 49%;
         height: 50%;
     }
@@ -590,18 +516,14 @@
         padding: 0;
 
         .button__text {
-            font-family: 'Noah';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 30px;
+            @include noah-400-24;
 
             text-align: center;
         }
     }
 }
 
-//стили для блока dream
+//dream
 .dream {
     margin-top: 200px;
     padding-bottom: 170px;
@@ -610,7 +532,7 @@
     flex-direction: column;
     align-items: center;
 
-    .dream__container {
+    &__container {
         display: flex;
         flex-flow: row wrap;
         max-width: 100%;
@@ -618,50 +540,39 @@
         align-items: center;
     }
 
-    .dream__title {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .dream__item {
+    &__item {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 20px;
     }
 
-    .dream__number {
+    &__number {
         padding-right: 35px;
-        font-family: 'Marck Script';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 96px;
-        line-height: 120px;
+
+        @include mark-400-96;
 
         color: $themeColor;
     }
 
-    .dream__text {
+    &__text {
         width: 600px;
-        font-family: 'Noah';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 35px;
+
+        @include noah-400-28;
 
         color: $darkColor;
     }
 
-    .dream__image {
+    &__image {
         position: absolute;
         //bottom: ?;
         z-index: -1;
     }
 }
 
-//стили для блока privilege
+//privilege
 .privilege {
-    .privilege__container {
+    &__container {
         padding-top: 75px;
 
         display: flex;
@@ -672,7 +583,7 @@
         background-color: $accentColor;
     }
 
-    .privilege__up {
+    &__up {
         margin-top: 110px;
 
         display: flex;
@@ -681,7 +592,7 @@
         gap: 300px;
     }
 
-    .privilege__down {
+    &__down {
         margin-top: 130px;
         margin-bottom: 110px;
 
@@ -691,38 +602,34 @@
         gap: 620px;
     }
 
-    .privilege__image {
+    &__image {
         width: 90px;
     }
 
-    .privilege__text {
-        font-family: 'Noah';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
+    &__text {
+        @include noah-400-24;
 
         color: $darkColor;
     }
 }
 
-//стили для блока feedback screen
+//feedback
 
 .feedback {
     margin-top: 168px;
 
-    .feedback__container {
+    &__container {
         display: flex;
         justify-content: center;
 
         flex-direction: column;
     }
 
-    .feedback__container-title {
+    &__container-title {
         text-align: center;
     }
 
-    .feedback__content {
+    &__content {
         margin-top: 50px;
 
         display: flex;
@@ -730,11 +637,11 @@
         justify-self: center;
     }
 
-    .feedback__content-review {
+    &__content-review {
         width: 573px;
     }
 
-    .feedback__content-image {
+    &__content-image {
         margin-right: 109px;
         width: 546px;
         height: 478px;
@@ -745,37 +652,25 @@
         margin: 0px;
     }
 
-    .feedback__content-text-name {
-        font-family: "Noah";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 38px;
-        line-height: 47px;
-        color: #545a2f;
+    &__content-text-name {
+        @include noah-400-38;
+        color: $themeColor;
         margin-top: 28px;
         margin-bottom: 7px;
     }
 
-    .feedback__content-text-1 {
-        font-family: "Noah";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
+    &__content-text-1 {
+        @include noah-400-24;
         margin: 0px;
-        color: #545a2f;
+        color: $themeColor;
     }
 
-    .feedback__content-text {
-        font-family: "Noah";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
+    &__content-text {
+        @include noah-400-24;
         margin-top: 34px;
     }
 
-    .feedback__content-review-arrows {
+    &__content-review-arrows {
         display: flex;
         justify-content: end;
     }
@@ -784,7 +679,7 @@
         margin-right: 47px;
     }
 
-    .feedback__container-scroll {
+    &__container-scroll {
         margin-top: 80px;
         text-align: center;
     }
@@ -795,7 +690,7 @@
     }
 }
 
-//стили для блока questions
+//questions
 
 .questions {
     display: flex;
@@ -805,14 +700,14 @@
     margin-top: 200px;
     margin-bottom: 200px;
 
-    .questions__container {
+    &__container {
         display: flex;
         justify-content: center;
         align-items: flex-start;
         gap: 50px;
     }
 
-    .questions__content-holder {
+    &__content-holder {
         margin-right: 75px;
 
         display: flex;
@@ -825,61 +720,50 @@
         margin-top: 0;
     }
 
-    .questions__list {
+    &__list {
         width: 825px;
         list-style-type: none;
 
     }
 
-    .questions__question {
+    &__question {
         width: 100%;
         height: 80px;
-        border-bottom: 1px solid #979797;
+        border-bottom: 1px solid $blakishColor;
         padding-top: 30px;
     }
 
-    .questions__label {
+    &__label {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        //width: 662px;
-        //height: 35px;
-
-        font-family: "Noah";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 35px;
+        @include noah-700-28;
 
         border: 10px;
         border-color: $darkColor;
     }
 
-    .questions__input {
+    &__input {
         display: none;
     }
 
 
-    .questions__text-holder {
+    &__text-holder {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.5s;
     }
 
 
-    .questions__input:checked+.questions__text-holder {
+    &__input:checked+&__text-holder {
         max-height: 120px;
         min-height: 120px;
         width: 692px;
     }
 
-    .questions__text {
-        font-family: 'Noah';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
+    &__text {
+        @include noah-400-24;
 
         color: $darkColor;
     }
@@ -979,37 +863,28 @@
     }
 }
 
-
-//стили для блока details
+//details
 
 .details {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
-    .details_screen__title {
+    &__title {
         margin-bottom: 50px;
         margin-left: 50px;
+    }
 
-        .title {
-            font-family: "Noah";
-            font-size: 70px;
-            font-weight: 700;
-            line-height: 87px;
-            letter-spacing: 0px;
-            text-align: left;
-            width: 675.31px;
-        }
+    .title {
+        @include noah-700-70;
+        text-align: left;
+        width: 675.31px;
+    }
 
-        .details__text {
-            font-family: "Noah";
-            font-size: 38px;
-            font-weight: 400;
-            line-height: 47px;
-            letter-spacing: 0px;
-            text-align: left;
-            width: 542px;
-        }
+    &__text {
+        @include noah-400-38;
+        text-align: left;
+        width: 542px;
     }
 
     .arrow-vector {
@@ -1017,29 +892,9 @@
         height: 27px;
         margin-left: -80px;
     }
-
-    /*
-    .button {
-        margin-bottom: 90px;
-    }
-
-    .button_button--round {
-        margin-top: 70px;
-        background-image: url();
-        background-color: $paleColor;
-        color: $lightColor;
-        font-family: "Noah";
-        height: 124px;
-        width: 124px;
-        left: 0px;
-        top: 0px;
-        border: none;
-        border-radius: 50%;
-    }
-*/
 }
 
-//стили для блока footer
+//footer
 
 footer {
     max-height: 230px;
@@ -1056,36 +911,22 @@ footer {
     color: $lightColor;
 
 
-    .footer__number {
+    &__number {
         padding-top: 60px;
 
-        font-family: "Geometria";
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 25px;
-        letter-spacing: 1px;
+        @include geometria-400-20;
         text-transform: uppercase
     }
 
-    .footer__email {
+    &__email {
 
-        font-family: "Geometria";
-        font-weight: 400;
-        font-style: normal;
-        font-size: 20px;
-        line-height: 25px;
-        letter-spacing: 1px;
+        @include geometria-400-20;
     }
 
-    .footer__copyright {
+    &__copyright {
         margin-top: 65px;
 
-        font-family: 'Noah';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 1px;
+        @include noah-400-16;
         text-transform: uppercase;
         opacity: 70%;
     }
@@ -1095,19 +936,15 @@ footer {
         height: 181.27px;
     }
 
-    .footer__right {
+    &__right {
         gap: 120px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     }
 
-    .footer__privacy {
-        font-family: 'Noah';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
+    &__privacy {
+        @include noah-400-16;
     }
 
     .insta-logo {

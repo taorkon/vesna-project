@@ -1,6 +1,6 @@
+//Import fonts
 @font-face {
   font-family: 'Noah';
-  //src: url('/assets/fonts/Noah-Bold.woff') format('woff');
   src: url('../../fonts/Noah-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
@@ -53,4 +53,109 @@
   font-weight: normal;
   font-style: italic;
   font-display: swap;
+}
+
+//Font mixins
+
+//Noah
+
+@mixin noah-400-16 {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin noah-400-24 {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+@mixin noah-400-28 {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+@mixin noah-400-38 {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 47px;
+}
+
+@mixin noah-400-48 {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+}
+
+@mixin noah-400-58 {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 72px;
+}
+
+@mixin noah-700-20 {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+@mixin noah-700-28 {
+  font-family: "Noah";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+@mixin noah-700-70 {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 87px
+}
+
+//Geometria
+
+@mixin geometria-400-20 {
+  font-family: "Geometria";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+@mixin geometria-500-24 {
+  font-family: 'Geometria';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+//Mark-Script
+
+@mixin mark-400-96 {
+  font-family: 'Marck Script';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 120px;
 }

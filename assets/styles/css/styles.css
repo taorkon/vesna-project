@@ -55,7 +55,7 @@
 
 .body,
 .screen {
-  max-width: 100vw;
+  max-width: 1920px;
 }
 
 .button {
@@ -104,7 +104,7 @@
   background-size: cover;
   background-position: center;
 }
-.header .header__top {
+.header__top {
   width: 100%;
   max-width: 100%;
   padding-top: 50px;
@@ -115,23 +115,23 @@
 .header .vesna-logo {
   padding-left: 110px;
 }
-.header .header__top-right {
+.header__top-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-right: 100px;
 }
-.header .header__nav {
+.header__nav {
   display: flex;
   justify-content: center;
   width: 40%;
   min-width: 40%;
 }
-.header .header__menu {
+.header__menu {
   list-style: none;
   display: flex;
 }
-.header .header__link {
+.header__link {
   text-decoration: none;
   padding-inline: 1rem;
   color: #fff;
@@ -142,7 +142,7 @@
   font-size: 24px;
   line-height: 24px;
 }
-.header .header__button-text {
+.header__button-text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 700;
@@ -151,12 +151,12 @@
   text-align: center;
   color: #fff;
 }
-.header .header__middle {
+.header__middle {
   padding-left: 290px;
   padding-top: 160px;
   padding-bottom: 230px;
 }
-.header .header__text {
+.header__text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -183,39 +183,39 @@
   right: 0;
   bottom: 0%;
 }
-.header .header__bottom {
+.header__bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .header__project-image {
+.header__project-image {
   padding-left: 290px;
 }
-.header .header__bottom-right {
+.header__bottom-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 230px;
   padding-right: 290px;
 }
-.header .header__arrows {
+.header__arrows {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 150px;
 }
 
-.place .place__container {
+.place__container {
   padding-top: 211px;
   display: flex;
   justify-content: center;
 }
-.place .place__container .place__description-holder {
+.place__description-holder {
   max-width: 1336px;
   min-width: 1200;
   height: 417px;
 }
-.place .place__container .place__text {
+.place__text {
   width: 856px;
   height: 240px;
   font-family: "Noah";
@@ -237,8 +237,9 @@
   font-size: 48px;
   line-height: 60px;
   text-align: center;
+  text-align: center;
 }
-.place .place__left {
+.place__left {
   position: absolute;
   left: 0px;
   top: 1540px;
@@ -249,12 +250,12 @@
   width: 511px;
   border-radius: 0px;
 }
-.place .place__right {
+.place__right {
   position: absolute;
   top: 1540px;
   right: 0;
 }
-.place .place__garden {
+.place__garden {
   max-width: 1920px;
   height: 410px;
   margin-top: 200px;
@@ -262,9 +263,7 @@
   justify-content: center;
   gap: 27px;
 }
-.place .place__garden .place__img-1,
-.place .place__garden .place__img-2,
-.place .place__garden .place__img-3 {
+.place__garden__img {
   width: 579px;
   height: 410px;
 }
@@ -279,15 +278,16 @@
   font-size: 48px;
   line-height: 60px;
   text-align: center;
+  text-align: center;
   margin-left: 380px;
   margin-right: 380px;
   color: #1A1A18;
 }
-.location .location__background {
+.location__background {
   display: flex;
   justify-content: center;
 }
-.location .location__background-set {
+.location__background-set {
   height: 900px;
 }
 .location .semicircle {
@@ -298,16 +298,16 @@
   margin-left: -220px;
   margin-bottom: 53px;
 }
-.location .location__content {
+.location__content {
   display: flex;
   justify-content: center;
 }
-.location .location__examples {
+.location__examples {
   width: 776px;
   height: 858px;
   margin-top: -812px;
 }
-.location .location__examples-note {
+.location__examples-note {
   margin-left: 270px;
   margin-bottom: 14px;
   margin-top: 0px;
@@ -317,33 +317,33 @@
   font-size: 24px;
   line-height: 30px;
 }
-.location .location__examples-image1 {
+.location__examples-image1 {
   width: 701px;
   height: 526px;
   margin-left: 87px;
 }
-.location .location__examples-image2 {
+.location__examples-image2 {
   width: 536px;
   height: 402px;
   margin-left: 327px;
   margin-top: -57px;
 }
-.location .location__block {
+.location__block {
   margin-top: -712px;
 }
-.location .location__block-1 {
+.location__block-1 {
   display: flex;
   margin-left: 115px;
   margin-right: 86px;
 }
-.location .location__block-2 {
+.location__block-2 {
   display: flex;
   margin-left: 165px;
   margin-top: 156px;
   margin-bottom: 161px;
   margin-right: 36px;
 }
-.location .location__block-3 {
+.location__block-3 {
   display: flex;
   margin-left: 201px;
 }
@@ -351,7 +351,7 @@
   width: 50px;
   height: 50px;
 }
-.location .location__block-note {
+.location__block-note {
   margin-left: 37px;
   margin-top: 0px;
   font-family: "Noah";
@@ -359,26 +359,27 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  color: #1A1A18;
   text-align: start;
+  color: #1A1A18;
 }
 
 .services {
   margin-top: 250px;
 }
-.services .services__container {
+.services__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 70px;
 }
-.services .services__container .services__content {
+.services__content {
   width: 399px;
   height: 678px;
   position: relative;
   margin-right: 70px;
 }
-.services .services__container .services__subtitle {
+.services__subtitle {
+  margin-top: 80px;
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -386,24 +387,23 @@
   line-height: 47px;
   text-align: center;
   color: #1A1A18;
-  margin-top: 80px;
 }
 .services .pencil-logo,
 .services .tree-logo,
 .services .fence-logo {
-  width: 81px;
-  height: 81px;
   position: absolute;
   top: 0px;
+  width: 81px;
+  height: 81px;
 }
-.services .services__list {
+.services__list {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
 }
-.services .services__list .services__text {
+.services__text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -419,7 +419,7 @@
   justify-content: space-around;
   align-items: center;
 }
-.instruction .instruction__background {
+.instruction__background {
   height: 333px;
   width: 100%;
   max-width: 100vw;
@@ -427,27 +427,13 @@
   z-index: -1;
   background-color: #DDE3E1;
 }
-.instruction .instruction__imageholder {
+.instruction__imageholder {
   width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.instruction .instruction__background {
-  height: 333px;
-  width: 100%;
-  max-width: 100vw;
-  position: absolute;
-  z-index: -1;
-  background-color: #DDE3E1;
-}
-.instruction .instruction__imageholder {
-  width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.instruction .instruction__image {
+.instruction__image {
   width: 1309px;
 }
 
@@ -458,13 +444,13 @@
   align-items: flex-start;
   padding-bottom: 200px;
 }
-.get-instruction .get-instruction__interactions {
+.get-instruction__interactions {
   display: flex;
   flex-direction: column;
   gap: 20px;
   height: 333px;
 }
-.get-instruction .get-instruction__text {
+.get-instruction__text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -472,7 +458,7 @@
   line-height: 30px;
   color: #1A1A18;
 }
-.get-instruction .get-instruction__label {
+.get-instruction__label {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -480,7 +466,7 @@
   line-height: 20px;
   color: #1A1A18;
 }
-.get-instruction .get-instruction__input {
+.get-instruction__input {
   width: 638px;
   height: 50px;
   border: none;
@@ -492,24 +478,24 @@
   color: #545A2F;
 }
 
-.designes .designes__container {
+.designes__container {
+  position: relative;
+  max-width: 1920px;
+  height: 1070px;
+  margin: 65px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1920px;
-  height: 1070px;
-  margin: 65px auto;
-  position: relative;
 }
-.designes .designes__image {
+.designes__image {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   align-content: space-between;
   gap: 5px;
 }
-.designes .designes__img {
+.designes__img {
   width: 49%;
   height: 50%;
 }
@@ -535,24 +521,20 @@
   flex-direction: column;
   align-items: center;
 }
-.dream .dream__container {
+.dream__container {
   display: flex;
   flex-flow: row wrap;
   max-width: 100%;
   justify-content: space-around;
   align-items: center;
 }
-.dream .dream__title {
-  display: flex;
-  flex-wrap: wrap;
-}
-.dream .dream__item {
+.dream__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
-.dream .dream__number {
+.dream__number {
   padding-right: 35px;
   font-family: "Marck Script";
   font-style: normal;
@@ -561,7 +543,7 @@
   line-height: 120px;
   color: #545A2F;
 }
-.dream .dream__text {
+.dream__text {
   width: 600px;
   font-family: "Noah";
   font-style: normal;
@@ -570,12 +552,12 @@
   line-height: 35px;
   color: #1A1A18;
 }
-.dream .dream__image {
+.dream__image {
   position: absolute;
   z-index: -1;
 }
 
-.privilege .privilege__container {
+.privilege__container {
   padding-top: 75px;
   display: flex;
   flex-direction: column;
@@ -583,14 +565,14 @@
   align-items: center;
   background-color: #DDE3E1;
 }
-.privilege .privilege__up {
+.privilege__up {
   margin-top: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 300px;
 }
-.privilege .privilege__down {
+.privilege__down {
   margin-top: 130px;
   margin-bottom: 110px;
   display: flex;
@@ -598,10 +580,10 @@
   align-items: center;
   gap: 620px;
 }
-.privilege .privilege__image {
+.privilege__image {
   width: 90px;
 }
-.privilege .privilege__text {
+.privilege__text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -613,24 +595,24 @@
 .feedback {
   margin-top: 168px;
 }
-.feedback .feedback__container {
+.feedback__container {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.feedback .feedback__container-title {
+.feedback__container-title {
   text-align: center;
 }
-.feedback .feedback__content {
+.feedback__content {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   justify-self: center;
 }
-.feedback .feedback__content-review {
+.feedback__content-review {
   width: 573px;
 }
-.feedback .feedback__content-image {
+.feedback__content-image {
   margin-right: 109px;
   width: 546px;
   height: 478px;
@@ -639,26 +621,26 @@
   width: 90px;
   margin: 0px;
 }
-.feedback .feedback__content-text-name {
+.feedback__content-text-name {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
   line-height: 47px;
-  color: #545a2f;
+  color: #545A2F;
   margin-top: 28px;
   margin-bottom: 7px;
 }
-.feedback .feedback__content-text-1 {
+.feedback__content-text-1 {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
   margin: 0px;
-  color: #545a2f;
+  color: #545A2F;
 }
-.feedback .feedback__content-text {
+.feedback__content-text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -666,14 +648,14 @@
   line-height: 30px;
   margin-top: 34px;
 }
-.feedback .feedback__content-review-arrows {
+.feedback__content-review-arrows {
   display: flex;
   justify-content: end;
 }
 .feedback .arrow-l {
   margin-right: 47px;
 }
-.feedback .feedback__container-scroll {
+.feedback__container-scroll {
   margin-top: 80px;
   text-align: center;
 }
@@ -689,13 +671,13 @@
   margin-top: 200px;
   margin-bottom: 200px;
 }
-.questions .questions__container {
+.questions__container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 50px;
 }
-.questions .questions__content-holder {
+.questions__content-holder {
   margin-right: 75px;
   display: flex;
   flex-direction: column;
@@ -704,17 +686,17 @@
 .questions .title {
   margin-top: 0;
 }
-.questions .questions__list {
+.questions__list {
   width: 825px;
   list-style-type: none;
 }
-.questions .questions__question {
+.questions__question {
   width: 100%;
   height: 80px;
   border-bottom: 1px solid #979797;
   padding-top: 30px;
 }
-.questions .questions__label {
+.questions__label {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -726,20 +708,20 @@
   border: 10px;
   border-color: #1A1A18;
 }
-.questions .questions__input {
+.questions__input {
   display: none;
 }
-.questions .questions__text-holder {
+.questions__text-holder {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
 }
-.questions .questions__input:checked + .questions__text-holder {
+.questions__input:checked + .questions__text-holder {
   max-height: 120px;
   min-height: 120px;
   width: 692px;
 }
-.questions .questions__text {
+.questions__text {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -821,45 +803,26 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /*
-      .button {
-          margin-bottom: 90px;
-      }
-
-      .button_button--round {
-          margin-top: 70px;
-          background-image: url();
-          background-color: $paleColor;
-          color: $lightColor;
-          font-family: "Noah";
-          height: 124px;
-          width: 124px;
-          left: 0px;
-          top: 0px;
-          border: none;
-          border-radius: 50%;
-      }
-  */
 }
-.details .details_screen__title {
+.details__title {
   margin-bottom: 50px;
   margin-left: 50px;
 }
-.details .details_screen__title .title {
+.details .title {
   font-family: "Noah";
-  font-size: 70px;
+  font-style: normal;
   font-weight: 700;
+  font-size: 70px;
   line-height: 87px;
-  letter-spacing: 0px;
   text-align: left;
   width: 675.31px;
 }
-.details .details_screen__title .details__text {
+.details__text {
   font-family: "Noah";
-  font-size: 38px;
+  font-style: normal;
   font-weight: 400;
+  font-size: 38px;
   line-height: 47px;
-  letter-spacing: 0px;
   text-align: left;
   width: 542px;
 }
@@ -880,7 +843,7 @@ footer {
   background-color: #545A2F;
   color: #fff;
 }
-footer .footer__number {
+footer__number {
   padding-top: 60px;
   font-family: "Geometria";
   font-weight: 400;
@@ -889,35 +852,33 @@ footer .footer__number {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-footer .footer__email {
+footer__email {
   font-family: "Geometria";
   font-weight: 400;
-  font-style: normal;
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 1px;
 }
-footer .footer__copyright {
+footer__copyright {
   margin-top: 65px;
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: 1px;
   text-transform: uppercase;
   opacity: 70%;
 }
 footer .vesna-logo--round {
   height: 181.27px;
 }
-footer .footer__right {
+footer__right {
   gap: 120px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-footer .footer__privacy {
+footer__privacy {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
