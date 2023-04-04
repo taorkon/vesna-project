@@ -1,7 +1,9 @@
 # VESNA PROJECT
 
-This is a train project based on <a href='https://www.figma.com/file/5qLjm23YfuTE9ieWlP701p/%D1%81%D0%B0%D0%B9%D1%82-VESNA-(Copy)?node-id=0%3A1'>this beautiful layout design</a> to enhance our frontend skills. Here we focus on creating an adaptive web-page that includes <a href='https://getbem.com/'>BEM</a>, <a href='https://sass-lang.com/'>SCSS</a> as well as flex and grid positioning methods.<br>
+This is a train project based on <a href='https://www.figma.com/file/5qLjm23YfuTE9ieWlP701p/%D1%81%D0%B0%D0%B9%D1%82-VESNA-(Copy)?node-id=0%3A1'>this beautiful layout design</a> to enhance our frontend skills. Here we focus on creating an adaptive web-page that includes <a href='https://getbem.com/'>BEM</a>, <a href='https://sass-lang.com/'>SCSS</a> as well as flex positioning methods.<br>
 <b>You can check out the result right here: https://taorkon.github.io/vesna-project/</b>
+
+<p>add project objectives and requeirements</p>
 
 ## SPRINTS
 
@@ -24,9 +26,11 @@ This is a train project based on <a href='https://www.figma.com/file/5qLjm23YfuT
   <li>Presentation</li>
 </ul>
 
-## INSTRUCTIONS
+## DESCRIPTION
 
-### 1.BEM
+### 1. File Structure
+
+### 2.BEM
 
 #### class = 'name'
 <p></p>
@@ -52,10 +56,26 @@ This is a train project based on <a href='https://www.figma.com/file/5qLjm23YfuT
 <p>Миксин.</p>
 <p></p>
 
-### 2. SCSS
-<p>Отдельные .scss файлы для пременных, стилей шрифтов и миксинов</p>
-<p>Separate .scss files for variables, font styles and mixins</p>
+#### pictures, logos, containers & holders naming
 
-### 3. Picture Naming
+### 3. Styles
+
+#### 3.1 Colors
+
+<p>Separate file with variables (<i>colors.scss</i>) with all colors used in the project. Find it imported at the very top of the <i>styles.scss</i>.</p>
+<p>colors in the project</p>
+
+#### 3.2 Fonts
+<p>Separate file with imports and mixins (<i>fonts.scss</i>) with all fonts used in the project, which reduced code lengh by roughly 130 lines (imported at the very top of <i>styles.scss</i>). Mixins include <i>font-family, font-style, font-weight, font-size, line-height</i> and sometimes <i>letter-spacing</i>. Names construction is <i>[font-family]-[font-weight]-[font-size]</i>, e.g. <i>noah-400-24</i>.</p>
+
+<p>fonts in the project</p>
+
+#### 3.3 Blocks
+<p>BEM blocks and their modificators' styles are at the top of <i>styles.scss</i>. We reuse <i>.button, .title, .description</i> and <i>.get-instruction</i>. They might be moved to a separate .scss file later on</p>
+
+#### 3.4 Positioning
+<p> We exclusively use <i>flex</i> positioning for out website. Although we do find grid-layout an extremely useful tool, it did not seem to be a necessaty in this particular project.</p>
+
+### 4. Picture Naming
 <p>Все картинки .jpg и .png - <b>элементы</b></p>
 <p>Все лого .svg - <b>блоки</b>. Использовать заранее созданные названия (подсказка в комментариях над каждым блоком в index.html)</p>
