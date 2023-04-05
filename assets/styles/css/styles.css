@@ -968,13 +968,21 @@ footer .insta-logo {
     flex-direction: column;
     align-items: center;
     gap: 100px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
   .services__content {
     width: 288px;
     height: 469px;
+    margin-right: 16px;
+    margin-left: 16px;
   }
   .services__subtitle {
+    width: 175px;
+    height: 30px;
     margin-top: 100px;
+    margin-left: 37px;
+    margin-right: 108px;
     font-family: "Noah";
     font-style: normal;
     font-weight: 400;
