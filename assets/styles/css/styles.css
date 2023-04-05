@@ -888,3 +888,119 @@ footer__privacy {
 footer .insta-logo {
   padding-top: 40px;
 }
+
+@media screen and (max-width: 320px) {
+  .place__container {
+    margin-top: 41px;
+    display: flex;
+    justify-content: center;
+  }
+  .place__description-holder {
+    max-width: 320px;
+    height: 525px;
+  }
+  .place__text {
+    width: 288px;
+    height: 280px;
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 40px;
+    margin-bottom: 107px;
+  }
+  .place .description {
+    margin-top: 40px;
+    margin-bottom: 41px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .place__left {
+    position: absolute;
+    left: 0px;
+    top: 419px;
+  }
+  .place .branch-l,
+  .place .branch-r {
+    height: 131px;
+    width: 181px;
+    border-radius: 0px;
+  }
+  .place__right {
+    position: absolute;
+    top: 419px;
+    right: 0;
+  }
+  .place__garden {
+    max-width: 320px;
+    height: 700px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .place__garden__img {
+    width: 320px;
+    height: 699px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .title {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .services {
+    margin-top: 250px;
+  }
+  .services__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+  .services__content {
+    width: 288px;
+    height: 469px;
+  }
+  .services__subtitle {
+    margin-top: 100px;
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #1A1A18;
+  }
+  .services .pencil-logo,
+  .services .tree-logo,
+  .services .fence-logo {
+    width: 60px;
+    height: 60px;
+  }
+  .services__list {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .services__text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
