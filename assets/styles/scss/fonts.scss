@@ -159,3 +159,11 @@
   font-size: 96px;
   line-height: 120px;
 }
+
+@mixin mark-400-64 {
+  font-family: 'Marck Script';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+}
