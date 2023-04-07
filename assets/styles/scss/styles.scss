@@ -177,11 +177,18 @@
 //place 
 
 .place {
+    &__wrapper {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
     &__container {
         padding-top: 211px;
 
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     &__description-holder {
@@ -1154,5 +1161,157 @@ footer {
     .insta-logo {
         padding-top: 40px;
 
+    }
+}
+
+
+
+
+
+//media place
+
+@media screen and (max-width: 320px) {
+
+.place {
+
+    &__container {
+    margin-left: 50%;
+    margin-right: 50%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    &__description-holder {
+        max-width: 320px;
+        height: 525px;
+        margin-bottom: 59px;
+        
+        
+    }
+
+    &__text {
+        width: 288px;
+        height: 280px;
+
+        @include noah-400-16;
+
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 40px;
+        margin-bottom: 107px;
+    }  
+
+    .description {
+        margin-top: 40px;
+        margin-bottom: 41px;
+margin-left: 16px;
+margin-right: 16px;
+        @include noah-400-24;
+
+        
+
+    }
+
+    &__left {
+        position: absolute;
+        left: 0px;
+        top: 419px;
+    }
+
+    .branch-l,
+    .branch-r {
+        height: 131px;
+        width: 181px;
+        border-radius: 0px;
+    }
+
+    &__right {
+        position: absolute;
+        top: 419px;
+        right: 0;
+
+    }
+
+
+    &__garden {
+        max-width: 320px;
+        height: 700px;
+        margin-top: 16px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        width: 320px;
+        height: 699px;
+    }
+}
+
+}
+
+
+//media services
+
+@media screen and (max-width: 320px) {
+    .title {
+        @include noah-400-24;
+    
+    }
+    .services {
+        margin-top: 250px;
+    
+&__title-holder {
+    margin-left: 50%;
+}
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+            margin-left: 50%;
+        }
+    
+        &__content {
+            width: 288px;
+            height: 469px;
+            margin-right: 16px;
+            margin-left: 16px;
+    
+        }
+    
+        &__subtitle {
+            width: 175px;
+            height: 30px;
+            margin-top: 100px;
+            margin-left: 37px;
+            margin-right: 108px;
+    
+            @include noah-400-24;
+    
+            text-align: center;
+            color: $darkColor;
+        }
+    
+        .pencil-logo,
+        .tree-logo,
+        .fence-logo {
+            width: 60px;
+            height: 60px;
+        }
+    
+        &__list {
+            @include noah-400-16;
+        }
+    
+        &__text {
+            @include noah-400-16;
+        }
     }
 }
