@@ -205,10 +205,16 @@
   gap: 150px;
 }
 
+.place__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .place__container {
   padding-top: 211px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .place__description-holder {
   max-width: 1336px;
@@ -891,13 +897,19 @@ footer .insta-logo {
 
 @media screen and (max-width: 320px) {
   .place__container {
-    margin-top: 41px;
+    margin-left: 50%;
+    margin-right: 50%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   .place__description-holder {
     max-width: 320px;
     height: 525px;
+    margin-bottom: 59px;
   }
   .place__text {
     width: 288px;
@@ -947,7 +959,7 @@ footer .insta-logo {
     flex-direction: column;
     align-items: center;
   }
-  .place__garden__img {
+  .place__img {
     width: 320px;
     height: 699px;
   }
@@ -963,13 +975,15 @@ footer .insta-logo {
   .services {
     margin-top: 250px;
   }
+  .services__title-holder {
+    margin-left: 50%;
+  }
   .services__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 100px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 50%;
   }
   .services__content {
     width: 288px;
