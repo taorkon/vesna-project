@@ -603,33 +603,68 @@
   .instruction .get-instruction-mobile .button {
     width: 94vw;
   }
+  
+.designes {
+  /*&__designes__img {
+      width: 45%;
+      height: 45%;
+  }*/
 }
 .designes__container {
   position: relative;
-  max-width: 1920px;
-  height: 1070px;
+  /*height: 1070px;*/
   margin: 65px auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.designes__title-holder {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 .designes__image {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
-  align-content: space-between;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+  /*flex-flow: row wrap;*/
+  align-content: center;
   gap: 5px;
+  width: 100%;
 }
-.designes__img {
-  width: 49%;
-  height: 50%;
+.designes__image-container1, .designes__image-container2, .designes__image-container3, .designes__image-container4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  width: 45%;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+}
+.designes__image-container1 {
+  background-image: url("../../images/designes__img1.jpg");
+}
+.designes__image-container2 {
+  background-image: url("../../images/designes__img2.jpg");
+}
+.designes__image-container3 {
+  background-image: url("../../images/designes__img3.jpg");
+}
+.designes__image-container4 {
+  background-image: url("../../images/designes__img4.jpg");
+}
+.designes .button-mobile {
+  display: none;
 }
 .designes .button {
   position: absolute;
-  top: 53%;
-  left: calc(50% - 96px);
+  left: calc(50% - 97.5px);
   padding: 0;
+  top: 52%;
 }
 .designes .button .button__text {
   font-family: "Noah";
@@ -639,6 +674,63 @@
   line-height: 30px;
   text-align: center;
 }
+@media screen and (max-width: 320px) {
+  .designes__container {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .designes__image {
+    max-width: 100%;
+  }
+  .designes__title-holder {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .designes__image-container1, .designes__image-container2, .designes__image-container3, .designes__image-container4 {
+    width: 100%;
+    height: 180px;
+    justify-content: end;
+    align-items: end;
+    margin: 5px;
+  }
+  .designes .button {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #545A2F;
+  }
+  .designes .button .designes__button-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .designes .button .button__text {
+    color: #fff;
+  }
+  .designes .arrow-r {
+    display: none;
+  }
+  .designes .button--shape {
+    width: 311px;
+    height: 60px;
+    border-radius: 0;
+  }
+  .designes .button-mobile {
+    display: flex;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
+    align-items: center;
+    justify-content: center;
+  }
+  .designes .arrow-light-mobile {
+    display: flex;
+  }
+}
 
 .dream {
   margin-top: 200px;
@@ -646,6 +738,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .dream__container {
   display: flex;
@@ -654,11 +747,17 @@
   justify-content: space-around;
   align-items: center;
 }
+.dream__title-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .dream__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  width: 600px;
 }
 .dream__number {
   padding-right: 35px;
@@ -670,7 +769,7 @@
   color: #545A2F;
 }
 .dream__text {
-  width: 600px;
+  /*width: 530px;*/
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
@@ -682,6 +781,37 @@
   position: absolute;
   z-index: -1;
 }
+@media screen and (max-width: 320px) {
+  .dream__title-holder {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .dream__item {
+    flex-direction: column;
+    gap: 0px;
+    width: 320px;
+  }
+  .dream__image {
+    display: none;
+  }
+  .dream__text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .dream__number {
+    font-family: "Marck Script";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+  }
+}
 
 .privilege__container {
   padding-top: 75px;
@@ -691,23 +821,36 @@
   align-items: center;
   background-color: #DDE3E1;
 }
+.privilege__titleholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .privilege__up {
   margin-top: 110px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 300px;
+  gap: 250px;
 }
 .privilege__down {
   margin-top: 130px;
   margin-bottom: 110px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 620px;
+  gap: 500px;
+}
+.privilege__part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 .privilege__image {
-  width: 90px;
+  width: 74px;
 }
 .privilege__text {
   font-family: "Noah";
@@ -716,6 +859,44 @@
   font-size: 24px;
   line-height: 30px;
   color: #1A1A18;
+}
+@media screen and (max-width: 320px) {
+  .privilege__container {
+    padding-top: 0px;
+    align-items: stretch;
+  }
+  .privilege__titleholder {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    width: 235px;
+  }
+  .privilege__up {
+    margin-bottom: 50px;
+  }
+  .privilege__up, .privilege__down {
+    flex-direction: column;
+    gap: 100px;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
+  .privilege__part {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .privilege__image {
+    width: 34px;
+  }
+  .privilege__text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .feedback {
