@@ -603,7 +603,7 @@
   .instruction .get-instruction-mobile .button {
     width: 94vw;
   }
-  
+}
 .designes {
   /*&__designes__img {
       width: 45%;
@@ -657,9 +657,6 @@
 .designes__image-container4 {
   background-image: url("../../images/designes__img4.jpg");
 }
-.designes .button-mobile {
-  display: none;
-}
 .designes .button {
   position: absolute;
   left: calc(50% - 97.5px);
@@ -674,6 +671,10 @@
   line-height: 30px;
   text-align: center;
 }
+.designes .button-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 320px) {
   .designes__container {
     margin: 0 auto;
@@ -696,29 +697,29 @@
     align-items: end;
     margin: 5px;
   }
-  .designes .button {
+  .button {
     position: relative;
     top: 0;
     left: 0;
     background-color: #545A2F;
   }
-  .designes .button .designes__button-text {
+  .button .designes__button-text {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .designes .button .button__text {
+  .button .button__text {
     color: #fff;
   }
-  .designes .arrow-r {
+  .arrow-r {
     display: none;
   }
-  .designes .button--shape {
+  .button--shape {
     width: 311px;
     height: 60px;
     border-radius: 0;
   }
-  .designes .button-mobile {
+  .button-mobile {
     display: flex;
     border-radius: 50%;
     width: 75px;
@@ -727,11 +728,10 @@
     align-items: center;
     justify-content: center;
   }
-  .designes .arrow-light-mobile {
+  .button-mobile .arrow-light-mobile {
     display: flex;
   }
 }
-
 .dream {
   margin-top: 200px;
   padding-bottom: 170px;

@@ -714,9 +714,7 @@
         background-image: url('../../images/designes__img4.jpg');
     }
 
-    .button-mobile {
-        display: none;
-    }
+
 
     .button {
         position: absolute;
@@ -731,7 +729,16 @@
         }
     }
 
-    @media screen and (max-width: 320px) {
+    .button-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .designes {
+
+
         &__container {
             margin: 0 auto;
             max-width: 100%;
@@ -757,49 +764,53 @@
             margin: 5px;
         }
 
-        .button {
-            position: relative;
-            top: 0;
-            left: 0;
-            background-color: $themeColor;
+    }
 
-            .designes__button-text {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+    .button {
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: $themeColor;
 
-            .button__text {
-                color: $lightColor;
-            }
-        }
-
-        .arrow-r {
-            display: none;
-        }
-
-        .button--shape {
-            width: 311px;
-            height: 60px;
-            border-radius: 0;
-        }
-
-        .button-mobile {
-
+        .designes__button-text {
             display: flex;
-            border-radius: 50%;
-            width: 75px;
-            height: 75px;
-            background-color: rgba($color: $lightColor, $alpha: 0.5);
             align-items: center;
             justify-content: center;
         }
+
+        .button__text {
+            color: $lightColor;
+        }
+    }
+
+    .arrow-r {
+        display: none;
+    }
+
+    .button--shape {
+        width: 311px;
+        height: 60px;
+        border-radius: 0;
+    }
+
+    .button-mobile {
+
+        display: flex;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        background-color: rgba($color: $lightColor, $alpha: 0.5);
+        align-items: center;
+        justify-content: center;
 
         .arrow-light-mobile {
             display: flex;
         }
     }
+
+
 }
+
 
 //dream
 .dream {
