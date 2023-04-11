@@ -22,45 +22,49 @@
   <!--Алиса\Таня-->
   <!--Переиспользуем vesna-logo, button button--color, branch-r, arrow-r, arrow-l, scroll-->
   <header class="header screen">
-    <div class="header__top">
-      <img class="vesna-logo" src="assets/images/vesna-logo.svg" alt="main logo" />
-      <div class="header__top-right">
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__item"> <a class="header__link" href="#">Главная</a></li>
-            <li class="header__item"> <a class="header__link" href="#">Портфолио</a></li>
-            <li class="header__item"> <a class="header__link" href="#">Услуги</a></li>
-            <li class="header__item"> <a class="header__link" href="#">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="header__button-holder">
-          <button class="button button--light">+7 (921) 888 88 88</button>
-          <div class="header__button-text-holder">
-            <p class="header__button-text">Бесплатная консультация</p>
+    <div class="header__container">
+      <div class="header__top">
+        <img class="vesna-logo" src="assets/images/vesna-logo.svg" alt="main logo" />
+        <img src="assets/images/burger.svg" alt="" class="burger">
+        <div class="header__top-right">
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__item"> <a class="header__link" href="#">Главная</a></li>
+              <li class="header__item"> <a class="header__link" href="#">Портфолио</a></li>
+              <li class="header__item"> <a class="header__link" href="#">Услуги</a></li>
+              <li class="header__item"> <a class="header__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__button-holder">
+            <button class="button button--light">+7 (921) 888 88 88</button>
+            <div class="header__button-text-holder">
+              <p class="header__button-text">Бесплатная консультация</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="header__middle">
-      <p class="header__text">Ландшафтная студия VESNA</p>
-      <h1 class="main-title">Создаем авторские ландшафты<br> с вашим характером</h1>
-      <h2 class="title title--header">От идеи до полной реализации</h2>
-      <img class="branch-r" src="assets/images/branch-r.svg" alt="tree branch " />
-    </div>
-    <div class="header__bottom">
-      <div class="header__image-holder"><img src="assets/images/header__project-image.png" alt=""
-          class="header__project-image"></div>
-      <div class="header__bottom-right">
-        <div class="header__arrows"><img src="assets/images/arrow-l.svg" alt="" class="arrow-l"><img
-            src="assets/images/arrow-r-light.svg" alt="" class="arrow-r"></div>
-        <div class="header__scroll"><img src="assets/images/header__scroll.svg" alt="" class="scroll"></div>
+      <div class="header__middle">
+        <p class="header__text">Ландшафтная студия VESNA</p>
+        <h1 class="main-title">Создаем авторские ландшафты<br> с вашим характером</h1>
+        <h2 class="title title--header">От идеи до полной реализации</h2>
+        <img class="branch-r" src="assets/images/branch-r.svg" alt="tree branch " />
+      </div>
+      <div class="header__bottom">
+        <div class="header__image-holder"><img src="assets/images/header__project-image.png" alt=""
+            class="header__project-image"></div>
+        <div class="header__bottom-right">
+          <div class="header__arrows"><img src="assets/images/arrow-l.svg" alt="" class="arrow-l"><img
+              src="assets/images/arrow-r-light.svg" alt="" class="arrow-r"></div>
+          <div class="header__scroll"><img src="assets/images/header__scroll.svg" alt="" class="scroll"></div>
+        </div>
       </div>
     </div>
   </header>
+
   <main class="main">
     <!--Вика-->
     <!--Переиспользуем description, baranch-r, branch-l-->
-    <section class="place screen">
+    <div class="place screen">
       <div class="place__container">
         <div class="place__description-holder">
           <h3 class="description">
@@ -82,7 +86,7 @@
       <div class="place__left">
         <img class="branch-l" src="assets/images/branch-l.svg" alt="branch-l" />
       </div>
-      </div>
+
       <div class="place__right">
         <img class="branch-r" src="assets/images/branch-r.svg" alt="branch-r" />
       </div>
@@ -91,6 +95,8 @@
         <img class="place__img" src="assets/images/garden__img--2.jpg" alt="garden image 2" />
         <img class="place__img" src="assets/images/garden__img--3.jpg" alt="garden image 3" />
       </div>
+    </div>
+
     </section>
     <!--Арина-->
     <!--Переиспользуем description, branch-up-->
@@ -210,9 +216,9 @@
     <section class="instruction screen">
       <div class="instruction__background"></div>
       <!--<div class="instruction__logoholder">
-                <img src="" alt="" class="0" />
-                <img src="" alt="" class="0" />
-            </div>-->
+              <img src="" alt="" class="0" />
+              <img src="" alt="" class="0" />
+          </div>-->
       <div class="instruction__imageholder">
         <img src="assets/images/instruction__image.png" alt="" class="instruction__image" />
       </div>
@@ -232,11 +238,41 @@
           </form>
           <form action="" class="get-instruction_checkboxholder">
             <input type="checkbox" id="consent" name="consent" value="consent">
-            <label for="consent" class="get-instruction__label">Я даю согласие на обработку своих персональных
+            <label for="consent" class="get-instruction__label">Я даю согласие на обработку своих
+              персональных
               данных</label>
           </form>
           <button class="button">Хочу инструкцию</button>
         </div>
+      </div>
+      <div class="get-instruction-mobile">
+        <div class="get-instruction__titleholder">
+          <h2 class="title">
+            Как выбрать растения<br />
+            для сада?
+          </h2>
+        </div>
+        <div class="get-instruction__backgroundholder">
+          <div class="get-instruction__textholder">
+            <p class="get-instruction__text">Пришлем инструкцию!</p>
+          </div>
+          <div class="get-instruction__imageholder">
+            <img src="assets/images/get-instructions__image--small1.png" alt="" class="get-instruction__image" />
+          </div>
+          <div class="get-instruction__interactions">
+            <form action="" class="get-instruction__inputholder">
+              <input class="get-instruction__input" type="text" id="email" name="email" value="Ваш Email">
+            </form>
+            <form action="" class="get-instruction_checkboxholder">
+              <input type="checkbox" id="consent" name="consent" value="consent">
+              <label for="consent" class="get-instruction__label">Я даю согласие на обработку своих
+                персональных
+                данных</label>
+            </form>
+            <button class="button">Хочу инструкцию</button>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
     <!--Аня-->
@@ -389,7 +425,8 @@
           <div class="questions__question-holder">
             <ul class="questions__list">
               <li class="questions__question">
-                <label for="first" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
+                <label for="first" class="questions__label">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing
                   elit? <span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
                       height="48" width="48">
                       <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
@@ -413,14 +450,17 @@
                 </label>
                 <input type="radio" name="accordeon" class="questions__input" id="first">
                 <div class="questions__text-holder">
-                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud
                     exercitation
                     ullamco laboris nisi ut aliquip ex e</p>
                 </div>
               </li>
               <li class="questions__question">
-                <label for="second" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
+                <label for="second" class="questions__label">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing
                   elit?<span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
                       height="48" width="48">
                       <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
@@ -443,14 +483,17 @@
                     </svg></span></label>
                 <input type="radio" name="accordeon" class="questions__input" id="second">
                 <div class="questions__text-holder">
-                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud
                     exercitation
                     ullamco laboris nisi ut aliquip ex e</p>
                 </div>
               </li>
               <li class="questions__question">
-                <label for="third" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
+                <label for="third" class="questions__label">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing
                   elit? <span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
                       height="48" width="48">
                       <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
@@ -473,14 +516,17 @@
                     </svg></span></label>
                 <input type="radio" name="accordeon" class="questions__input" id="third">
                 <div class="questions__text-holder">
-                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud
                     exercitation
                     ullamco laboris nisi ut aliquip ex e</p>
                 </div>
               </li>
               <li class="questions__question">
-                <label for="fourth" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
+                <label for="fourth" class="questions__label">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing
                   elit? <span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
                       height="48" width="48">
                       <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
@@ -503,14 +549,17 @@
                     </svg></span></label>
                 <input type="radio" name="accordeon" class="questions__input" id="fourth">
                 <div class="questions__text-holder">
-                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud
                     exercitation
                     ullamco laboris nisi ut aliquip ex e</p>
                 </div>
               </li>
               <li class="questions__question">
-                <label for="fifth" class="questions__label">Lorem ipsum dolor sit amet, consectetur adipiscing
+                <label for="fifth" class="questions__label">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing
                   elit? <span class="questions-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
                       height="48" width="48">
                       <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
@@ -533,8 +582,10 @@
                     </svg></span></label>
                 <input type="radio" name="accordeon" class="questions__input" id="fifth" checked>
                 <div class="questions__text-holder">
-                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  <p class="questions__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud
                     exercitation
                     ullamco laboris nisi ut aliquip ex e</p>
                 </div>
@@ -561,7 +612,8 @@
             </form>
             <form action="" class="get-instruction_checkboxholder">
               <input type="checkbox" id="consent" name="consent" value="consent">
-              <label for="consent" class="get-instruction__label">Я даю согласие на обработку своих персональных
+              <label for="consent" class="get-instruction__label">Я даю согласие на обработку своих
+                персональных
                 данных</label>
             </form>
             <button class="button">Хочу инструкцию</button>

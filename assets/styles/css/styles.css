@@ -53,11 +53,18 @@
   box-sizing: inherit;
 }
 
-.body,
 .screen {
   max-width: 1920px;
 }
 
+/*
+.screen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
 .button {
   font-family: "Noah";
   font-style: normal;
@@ -99,6 +106,14 @@
 }
 
 .header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__container {
+  width: 100%;
+  max-width: 1920px;
   background-image: url("../../images/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,19 +122,23 @@
 .header__top {
   width: 100%;
   max-width: 100%;
-  padding-top: 50px;
+  padding-top: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header .vesna-logo {
-  padding-left: 110px;
+  width: 11vw;
+  padding-left: 6vw;
+}
+.header .burger {
+  display: none;
 }
 .header__top-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 100px;
+  padding-right: 6vw;
 }
 .header__nav {
   display: flex;
@@ -152,9 +171,9 @@
   color: #fff;
 }
 .header__middle {
-  padding-left: 290px;
-  padding-top: 160px;
-  padding-bottom: 230px;
+  padding-left: 16vw;
+  padding-top: 16vh;
+  padding-bottom: 23vh;
 }
 .header__text {
   font-family: "Noah";
@@ -189,22 +208,66 @@
   align-items: center;
 }
 .header__project-image {
-  padding-left: 290px;
+  width: 22vw;
+  padding-left: 16vw;
 }
 .header__bottom-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 230px;
-  padding-right: 290px;
+  gap: 13vw;
+  padding-right: 13vw;
 }
 .header__arrows {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 150px;
+  gap: 8vw;
 }
 
+@media screen and (max-width: 320px) {
+  .header__top-right,
+  .header__button-holder,
+  .header__bottom-right {
+    display: none;
+  }
+  .header .vesna-logo {
+    width: 34vw;
+  }
+  .header .burger {
+    display: block;
+    padding-right: 6vw;
+  }
+  .header__middle {
+    padding-left: 6vw;
+  }
+  .header__text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .header .main-title {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .header .title--header {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .header__project-image {
+    width: 58vw;
+    height: 13vh;
+    padding-left: 0;
+  }
+}
 .place__container {
   padding-top: 211px;
   display: flex;
@@ -212,7 +275,7 @@
 }
 .place__description-holder {
   max-width: 1336px;
-  min-width: 1200;
+  min-width: 1200px;
   height: 417px;
 }
 .place__text {
@@ -436,6 +499,9 @@
 .instruction__image {
   width: 1309px;
 }
+.instruction .get-instruction-mobile {
+  display: none;
+}
 
 .get-instruction {
   width: 50vw;
@@ -478,6 +544,66 @@
   color: #545A2F;
 }
 
+@media screen and (max-width: 320px) {
+  .instruction .get-instruction, .instruction__background, .instruction__imageholder {
+    display: none;
+  }
+  .instruction .get-instruction-mobile {
+    display: block;
+    width: 100vw;
+    padding-bottom: 33px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .instruction .get-instruction-mobile .get-instruction__backgroundholder {
+    background-color: #DDE3E1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    padding-bottom: 33px;
+    padding-top: 40px;
+  }
+  .instruction .get-instruction-mobile .title {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  .instruction .get-instruction-mobile .get-instruction__text {
+    margin-bottom: 0;
+    margin-top: 33px;
+  }
+  .instruction .get-instruction-mobile .get-instruction__imageholder {
+    width: 90vw;
+  }
+  .instruction .get-instruction-mobile .get-instruction__image {
+    width: 100%;
+  }
+  .instruction .get-instruction-mobile .get-instruction__interactions {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .instruction .get-instruction-mobile .get-instruction__input {
+    width: 90vw;
+  }
+  .instruction .get-instruction-mobile .get-instruction__checkboxholder {
+    width: 90vw;
+  }
+  .instruction .get-instruction-mobile .button {
+    width: 94vw;
+  }
+}
 .designes__container {
   position: relative;
   max-width: 1920px;
@@ -687,7 +813,7 @@
   margin-top: 0;
 }
 .questions__list {
-  width: 825px;
+  width: 45vw;
   list-style-type: none;
 }
 .questions__question {
@@ -719,7 +845,7 @@
 .questions__input:checked + .questions__text-holder {
   max-height: 120px;
   min-height: 120px;
-  width: 692px;
+  width: 37vw;
 }
 .questions__text {
   font-family: "Noah";
@@ -762,6 +888,44 @@
   transform: rotate(0);
 }
 
+@media screen and (max-width: 320px) {
+  .questions .get-instruction {
+    display: none;
+  }
+  .questions__content-holder {
+    margin-right: 0;
+  }
+  .questions__list {
+    width: 80vw;
+  }
+  .questions .title {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .questions__label {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .questions__text {
+    font-family: "Noah";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 70vw;
+  }
+  .questions__input:checked + .questions__text-holder {
+    max-height: 120px;
+    min-height: 120px;
+    width: 70vw;
+  }
+}
 .get-instruction--small {
   width: 473px;
   padding-bottom: 33px;
@@ -832,7 +996,7 @@
   margin-left: -80px;
 }
 
-footer {
+.footer {
   max-height: 230px;
   display: flex;
   justify-content: space-between;
@@ -843,23 +1007,21 @@ footer {
   background-color: #545A2F;
   color: #fff;
 }
-footer__number {
+.footer__number {
   padding-top: 60px;
   font-family: "Geometria";
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
-  letter-spacing: 1px;
   text-transform: uppercase;
 }
-footer__email {
+.footer__email {
   font-family: "Geometria";
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
-  letter-spacing: 1px;
 }
-footer__copyright {
+.footer__copyright {
   margin-top: 65px;
   font-family: "Noah";
   font-style: normal;
@@ -869,22 +1031,22 @@ footer__copyright {
   text-transform: uppercase;
   opacity: 70%;
 }
-footer .vesna-logo--round {
+.footer .vesna-logo--round {
   height: 181.27px;
 }
-footer__right {
+.footer__right {
   gap: 120px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-footer__privacy {
+.footer__privacy {
   font-family: "Noah";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
-footer .insta-logo {
+.footer .insta-logo {
   padding-top: 40px;
 }
